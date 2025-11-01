@@ -1,0 +1,503 @@
+{
+  "id": "jpetstore-e2e-final",
+  "version": "2.0",
+  "name": "JPetStore E2E - Basado en Playwright Funcional",
+  "url": "https://jpetstore.aspectran.com",
+  "tests": [{
+    "id": "flujo-a-compra-completa",
+    "name": "Flujo A: Compra Completa de Producto",
+    "commands": [{
+      "id": "1",
+      "comment": "INICIO - Abrir JPetStore",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2",
+      "comment": "Aserción: Verificar título de la página",
+      "command": "assertTitle",
+      "target": "JPetStore Demo",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3",
+      "comment": "Aserción: Verificar que el enlace Sign In está presente",
+      "command": "assertElementPresent",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4",
+      "comment": "Click en Sign In",
+      "command": "click",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5",
+      "comment": "Esperar que cargue la página de login",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6",
+      "comment": "Aserción: Verificar que el botón Login está presente",
+      "command": "assertElementPresent",
+      "target": "css=button[type='submit']",
+      "targets": [
+        ["css=button[type='submit']", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7",
+      "comment": "Click en botón Login (credenciales por defecto)",
+      "command": "click",
+      "target": "css=button[type='submit']",
+      "targets": [
+        ["css=button[type='submit']", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8",
+      "comment": "Esperar que complete el login",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9",
+      "comment": "Aserción: Verificar login exitoso (Sign Out presente)",
+      "command": "assertElementPresent",
+      "target": "linkText=Sign Out",
+      "targets": [
+        ["linkText=Sign Out", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10",
+      "comment": "Click en categoría Fish en el sidebar",
+      "command": "click",
+      "target": "css=#SidebarContent a[href*='FISH']",
+      "targets": [
+        ["css=#SidebarContent a[href*='FISH']", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "11",
+      "comment": "Esperar que cargue la categoría",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12",
+      "comment": "Aserción: Verificar que el producto FI-SW-01 está presente",
+      "command": "assertElementPresent",
+      "target": "linkText=FI-SW-01",
+      "targets": [
+        ["linkText=FI-SW-01", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13",
+      "comment": "Click en producto FI-SW-01 (Angelfish)",
+      "command": "click",
+      "target": "linkText=FI-SW-01",
+      "targets": [
+        ["linkText=FI-SW-01", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14",
+      "comment": "Esperar que cargue el detalle del producto",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15",
+      "comment": "Aserción: Verificar que el enlace Add to Cart está presente",
+      "command": "assertElementPresent",
+      "target": "linkText=Add to Cart",
+      "targets": [
+        ["linkText=Add to Cart", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16",
+      "comment": "Click en el primer Add to Cart",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'Add to Cart')])[1]",
+      "targets": [
+        ["xpath=(//a[contains(text(),'Add to Cart')])[1]", "xpath"]
+      ],
+      "value": ""
+    }, {
+      "id": "17",
+      "comment": "Esperar que se agregue al carrito",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18",
+      "comment": "Aserción: Verificar que estamos en el carrito (Proceed to Checkout presente)",
+      "command": "assertElementPresent",
+      "target": "linkText=Proceed to Checkout",
+      "targets": [
+        ["linkText=Proceed to Checkout", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19",
+      "comment": "Click en Proceed to Checkout",
+      "command": "click",
+      "target": "linkText=Proceed to Checkout",
+      "targets": [
+        ["linkText=Proceed to Checkout", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20",
+      "comment": "Esperar que cargue la página de checkout",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21",
+      "comment": "Aserción: Verificar que el botón Continue está presente",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[text()='Continue']",
+      "targets": [
+        ["xpath=//button[text()='Continue']", "xpath"]
+      ],
+      "value": ""
+    }, {
+      "id": "22",
+      "comment": "Click en botón Continue",
+      "command": "click",
+      "target": "xpath=//button[text()='Continue']",
+      "targets": [
+        ["xpath=//button[text()='Continue']", "xpath"]
+      ],
+      "value": ""
+    }, {
+      "id": "23",
+      "comment": "Esperar que cargue la confirmación",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24",
+      "comment": "Aserción: Verificar que el botón Confirm está presente",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[text()='Confirm']",
+      "targets": [
+        ["xpath=//button[text()='Confirm']", "xpath"]
+      ],
+      "value": ""
+    }, {
+      "id": "25",
+      "comment": "Click en botón Confirm para finalizar la orden",
+      "command": "click",
+      "target": "xpath=//button[text()='Confirm']",
+      "targets": [
+        ["xpath=//button[text()='Confirm']", "xpath"]
+      ],
+      "value": ""
+    }, {
+      "id": "26",
+      "comment": "Esperar que se procese la orden",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27",
+      "comment": "ASERCIÓN FINAL: Verificar que la página tiene el título JPetStore Demo (orden procesada)",
+      "command": "assertTitle",
+      "target": "JPetStore Demo",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28",
+      "comment": "ASERCIÓN FINAL: Verificar que Sign Out sigue presente (usuario logueado)",
+      "command": "assertElementPresent",
+      "target": "linkText=Sign Out",
+      "targets": [
+        ["linkText=Sign Out", "linkText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "flujo-b-gestion-cuenta",
+    "name": "Flujo B: Gestión de Cuenta de Usuario",
+    "commands": [{
+      "id": "1",
+      "comment": "INICIO - Abrir JPetStore",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2",
+      "comment": "Aserción: Verificar título de la página",
+      "command": "assertTitle",
+      "target": "JPetStore Demo",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3",
+      "comment": "Aserción: Verificar que el enlace Sign In está presente",
+      "command": "assertElementPresent",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4",
+      "comment": "Click en Sign In",
+      "command": "click",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5",
+      "comment": "Esperar que cargue la página de login",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6",
+      "comment": "Aserción: Verificar que el botón Login está presente",
+      "command": "assertElementPresent",
+      "target": "css=button[type='submit']",
+      "targets": [
+        ["css=button[type='submit']", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7",
+      "comment": "Click en botón Login",
+      "command": "click",
+      "target": "css=button[type='submit']",
+      "targets": [
+        ["css=button[type='submit']", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8",
+      "comment": "Esperar que complete el login",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9",
+      "comment": "Aserción: Verificar login exitoso (Sign Out presente)",
+      "command": "assertElementPresent",
+      "target": "linkText=Sign Out",
+      "targets": [
+        ["linkText=Sign Out", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10",
+      "comment": "Click en el ícono My Account",
+      "command": "click",
+      "target": "css=a[title='My Account']",
+      "targets": [
+        ["css=a[title='My Account']", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "11",
+      "comment": "Esperar que se abra el menú",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12",
+      "comment": "Aserción: Verificar que el enlace My Account está presente en el menú",
+      "command": "assertElementPresent",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13",
+      "comment": "Click en My Account del menú",
+      "command": "click",
+      "target": "linkText=My Account",
+      "targets": [
+        ["linkText=My Account", "linkText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14",
+      "comment": "Esperar que cargue la página de cuenta",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15",
+      "comment": "Aserción: Verificar que el campo firstName está presente",
+      "command": "assertElementPresent",
+      "target": "css=input[name='firstName']",
+      "targets": [
+        ["css=input[name='firstName']", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "16",
+      "comment": "Aserción: Verificar que el campo lastName está presente",
+      "command": "assertElementPresent",
+      "target": "css=input[name='lastName']",
+      "targets": [
+        ["css=input[name='lastName']", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "17",
+      "comment": "Click en campo firstName",
+      "command": "click",
+      "target": "css=input[name='firstName']",
+      "targets": [
+        ["css=input[name='firstName']", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "18",
+      "comment": "Seleccionar todo el contenido del campo",
+      "command": "sendKeys",
+      "target": "css=input[name='firstName']",
+      "targets": [
+        ["css=input[name='firstName']", "css:finder"]
+      ],
+      "value": "${KEY_CTRL}a"
+    }, {
+      "id": "19",
+      "comment": "Ingresar nuevo firstName",
+      "command": "type",
+      "target": "css=input[name='firstName']",
+      "targets": [
+        ["css=input[name='firstName']", "css:finder"]
+      ],
+      "value": "Juan_Test"
+    }, {
+      "id": "20",
+      "comment": "Click en campo lastName",
+      "command": "click",
+      "target": "css=input[name='lastName']",
+      "targets": [
+        ["css=input[name='lastName']", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "21",
+      "comment": "Seleccionar todo el contenido del campo",
+      "command": "sendKeys",
+      "target": "css=input[name='lastName']",
+      "targets": [
+        ["css=input[name='lastName']", "css:finder"]
+      ],
+      "value": "${KEY_CTRL}a"
+    }, {
+      "id": "22",
+      "comment": "Ingresar nuevo lastName",
+      "command": "type",
+      "target": "css=input[name='lastName']",
+      "targets": [
+        ["css=input[name='lastName']", "css:finder"]
+      ],
+      "value": "Perez_Test"
+    }, {
+      "id": "23",
+      "comment": "Esperar antes de guardar",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24",
+      "comment": "Aserción: Verificar que el botón Save Account Information está presente",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[contains(text(),'Save Account Information')]",
+      "targets": [
+        ["xpath=//button[contains(text(),'Save Account Information')]", "xpath"]
+      ],
+      "value": ""
+    }, {
+      "id": "25",
+      "comment": "Click en botón Save Account Information",
+      "command": "click",
+      "target": "xpath=//button[contains(text(),'Save Account Information')]",
+      "targets": [
+        ["xpath=//button[contains(text(),'Save Account Information')]", "xpath"]
+      ],
+      "value": ""
+    }, {
+      "id": "26",
+      "comment": "Esperar que se procese la actualización",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27",
+      "comment": "ASERCIÓN FINAL: Verificar que la página tiene el título JPetStore Demo",
+      "command": "assertTitle",
+      "target": "JPetStore Demo",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28",
+      "comment": "ASERCIÓN FINAL: Verificar que el campo firstName sigue presente (estamos en la página de cuenta)",
+      "command": "assertElementPresent",
+      "target": "css=input[name='firstName']",
+      "targets": [
+        ["css=input[name='firstName']", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "29",
+      "comment": "ASERCIÓN FINAL: Verificar que Sign Out sigue presente (usuario logueado)",
+      "command": "assertElementPresent",
+      "target": "linkText=Sign Out",
+      "targets": [
+        ["linkText=Sign Out", "linkText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "suite-completa-e2e",
+    "name": "Suite Completa E2E - JPetStore",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": [
+      "flujo-a-compra-completa",
+      "flujo-b-gestion-cuenta"
+    ]
+  }],
+  "urls": [
+    "https://jpetstore.aspectran.com/"
+  ],
+  "plugins": []
+}
