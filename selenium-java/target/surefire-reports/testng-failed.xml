@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [JPetStore Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Flujos E2E JPetStore(failed)" verbose="0">
+    <classes>
+      <class name="com.jpetstore.tests.FlujoACompraCompletaTest">
+        <methods>
+          <include name="testCompraCompleta"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jpetstore.tests.FlujoACompraCompletaTest -->
+      <class name="com.jpetstore.tests.FlujoBGestionCuentaTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testGestionCuenta"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.jpetstore.tests.FlujoBGestionCuentaTest -->
+    </classes>
+  </test> <!-- Flujos E2E JPetStore(failed) -->
+</suite> <!-- Failed suite [JPetStore Test Suite] -->

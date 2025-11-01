@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="JPetStore Test Suite" verbose="1">
+    <test name="Flujos E2E JPetStore">
+        <classes>
+            <class name="com.jpetstore.tests.FlujoACompraCompletaTest"/>
+            <class name="com.jpetstore.tests.FlujoBGestionCuentaTest"/>
+        </classes>
+    </test>
+</suite>
