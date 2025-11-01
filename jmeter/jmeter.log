@@ -1,0 +1,284 @@
+2025-11-01 14:13:41,953 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-11-01 14:13:41,964 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties
+2025-11-01 14:13:41,964 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/system.properties
+2025-11-01 14:13:41,967 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-11-01 14:13:41,967 INFO o.a.j.JMeter: Version 5.6.3
+2025-11-01 14:13:41,967 INFO o.a.j.JMeter: java.version=21.0.9
+2025-11-01 14:13:41,967 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2025-11-01 14:13:41,967 INFO o.a.j.JMeter: os.name=Mac OS X
+2025-11-01 14:13:41,967 INFO o.a.j.JMeter: os.arch=aarch64
+2025-11-01 14:13:41,967 INFO o.a.j.JMeter: os.version=26.0.1
+2025-11-01 14:13:41,967 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-11-01 14:13:41,967 INFO o.a.j.JMeter: java.awt.headless=true
+2025-11-01 14:13:41,967 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-11-01 14:13:41,967 INFO o.a.j.JMeter: Available Processors =8
+2025-11-01 14:13:41,995 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-11-01 14:13:41,995 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-11-01 14:13:41,995 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.6.3/libexec
+2025-11-01 14:13:41,995 INFO o.a.j.JMeter: user.dir  =/Users/cindy.garcia/Desktop/Samy/pruebas/jmeter
+2025-11-01 14:13:41,995 INFO o.a.j.JMeter: PWD       =/Users/cindy.garcia/Desktop/Samy/pruebas/jmeter
+2025-11-01 14:13:42,037 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: cgarcia3.local FullName: localhost
+2025-11-01 14:13:42,043 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/Users/cindy.garcia/Desktop/Samy/pruebas/jmeter/report'
+2025-11-01 14:13:42,044 INFO o.a.j.s.FileServer: Default base='/Users/cindy.garcia/Desktop/Samy/pruebas/jmeter'
+2025-11-01 14:13:42,045 INFO o.a.j.s.FileServer: Set new base='/Users/cindy.garcia/Desktop/Samy/pruebas/jmeter'
+2025-11-01 14:13:42,148 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-11-01 14:13:42,171 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-11-01 14:13:42,173 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-11-01 14:13:42,175 INFO o.a.j.s.SaveService: Loading file: JPetStore-Performance-Test.jmx
+2025-11-01 14:13:42,212 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-01 14:13:42,212 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-01 14:13:42,212 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-01 14:13:42,212 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-01 14:13:42,212 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-11-01 14:13:42,212 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-11-01 14:13:42,216 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2025-11-01 14:13:42,218 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2025-11-01 14:13:42,233 INFO o.a.j.JMeter: Creating summariser <summary>
+2025-11-01 14:13:42,234 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2025-11-01 14:13:42,235 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: results.jtl
+2025-11-01 14:13:42,235 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/reportgenerator.properties
+2025-11-01 14:13:42,235 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2025-11-01 14:13:42,237 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2025-11-01 14:13:42,238 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2025-11-01 14:13:42,238 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2025-11-01 14:13:42,238 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2025-11-01 14:13:42,238 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2025-11-01 14:13:42,238 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2025-11-01 14:13:42,238 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2025-11-01 14:13:42,238 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2025-11-01 14:13:42,239 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2025-11-01 14:13:42,241 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2025-11-01 14:13:42,241 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-11-01 14:13:42,241 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2025-11-01 14:13:42,241 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2025-11-01 14:13:42,241 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2025-11-01 14:13:42,241 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2025-11-01 14:13:42,241 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-11-01 14:13:42,241 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-11-01 14:13:42,241 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-11-01 14:13:42,241 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-11-01 14:13:42,242 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2025-11-01 14:13:42,242 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2025-11-01 14:13:42,242 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2025-11-01 14:13:42,242 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2025-11-01 14:13:42,242 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2025-11-01 14:13:42,242 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2025-11-01 14:13:42,249 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-01 14:13:42,249 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-01 14:13:42,249 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-01 14:13:42,252 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-11-01 14:13:42,252 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-11-01 14:13:42,280 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-11-01 14:13:42,342 INFO o.a.j.JMeter: Running test (1762024422342)
+2025-11-01 14:13:42,352 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group - 50 Usuarios
+2025-11-01 14:13:42,352 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group Thread Group - 50 Usuarios.
+2025-11-01 14:13:42,352 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-01 14:13:42,352 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=50 ramp-up=10 delayedStart=false
+2025-11-01 14:13:42,356 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-1
+2025-11-01 14:13:42,365 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = cgarcia3.local
+2025-11-01 14:13:42,367 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-11-01 14:13:42,368 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-01 14:13:42,368 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-01 14:13:42,368 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-11-01 14:13:42,368 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-11-01 14:13:42,368 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-11-01 14:13:42,368 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-11-01 14:13:42,558 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-2
+2025-11-01 14:13:42,759 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-3
+2025-11-01 14:13:42,958 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-4
+2025-11-01 14:13:43,158 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-5
+2025-11-01 14:13:43,358 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-6
+2025-11-01 14:13:43,557 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-7
+2025-11-01 14:13:43,757 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-8
+2025-11-01 14:13:43,957 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-9
+2025-11-01 14:13:44,158 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-10
+2025-11-01 14:13:44,357 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-11
+2025-11-01 14:13:44,558 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-12
+2025-11-01 14:13:44,758 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-13
+2025-11-01 14:13:44,959 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-14
+2025-11-01 14:13:45,158 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-15
+2025-11-01 14:13:45,357 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-16
+2025-11-01 14:13:45,558 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-17
+2025-11-01 14:13:45,757 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-18
+2025-11-01 14:13:45,957 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-19
+2025-11-01 14:13:46,158 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-20
+2025-11-01 14:13:46,358 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-21
+2025-11-01 14:13:46,557 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-22
+2025-11-01 14:13:46,757 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-23
+2025-11-01 14:13:46,957 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-24
+2025-11-01 14:13:47,157 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-25
+2025-11-01 14:13:47,356 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-26
+2025-11-01 14:13:47,402 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2025-11-01 14:13:47,409 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2025-11-01 14:13:47,409 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2025-11-01 14:13:47,554 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-27
+2025-11-01 14:13:47,562 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2025-11-01 14:13:47,563 INFO o.a.j.u.SSLManager: KeyStore created OK
+2025-11-01 14:13:47,563 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2025-11-01 14:13:47,757 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-28
+2025-11-01 14:13:47,957 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-29
+2025-11-01 14:13:48,155 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-30
+2025-11-01 14:13:48,357 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-31
+2025-11-01 14:13:48,485 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-22
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-22
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-21
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-1
+2025-11-01 14:13:48,485 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-16
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-1
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-13
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-16
+2025-11-01 14:13:48,485 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-19
+2025-11-01 14:13:48,485 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-2
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-19
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-2
+2025-11-01 14:13:48,485 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-9
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-24
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-9
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-13
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-20
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-20
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-21
+2025-11-01 14:13:48,486 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-24
+2025-11-01 14:13:48,556 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-14
+2025-11-01 14:13:48,556 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-14
+2025-11-01 14:13:48,556 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-17
+2025-11-01 14:13:48,556 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-17
+2025-11-01 14:13:48,557 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-32
+2025-11-01 14:13:48,559 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-12
+2025-11-01 14:13:48,559 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-3
+2025-11-01 14:13:48,559 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-10
+2025-11-01 14:13:48,559 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-18
+2025-11-01 14:13:48,559 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-10
+2025-11-01 14:13:48,559 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-18
+2025-11-01 14:13:48,559 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-12
+2025-11-01 14:13:48,559 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-3
+2025-11-01 14:13:48,755 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-33
+2025-11-01 14:13:48,838 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-6
+2025-11-01 14:13:48,838 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-6
+2025-11-01 14:13:48,841 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-23
+2025-11-01 14:13:48,841 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-23
+2025-11-01 14:13:48,848 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-15
+2025-11-01 14:13:48,848 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-15
+2025-11-01 14:13:48,848 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-4
+2025-11-01 14:13:48,848 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-4
+2025-11-01 14:13:48,852 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-8
+2025-11-01 14:13:48,852 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-8
+2025-11-01 14:13:48,857 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-27
+2025-11-01 14:13:48,857 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-27
+2025-11-01 14:13:48,857 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-5
+2025-11-01 14:13:48,857 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-7
+2025-11-01 14:13:48,857 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-5
+2025-11-01 14:13:48,858 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-7
+2025-11-01 14:13:48,860 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-11
+2025-11-01 14:13:48,861 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-11
+2025-11-01 14:13:48,865 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-26
+2025-11-01 14:13:48,865 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-26
+2025-11-01 14:13:48,957 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-34
+2025-11-01 14:13:48,968 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-30
+2025-11-01 14:13:48,968 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-30
+2025-11-01 14:13:49,031 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-28
+2025-11-01 14:13:49,031 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-28
+2025-11-01 14:13:49,149 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-29
+2025-11-01 14:13:49,149 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-29
+2025-11-01 14:13:49,155 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-35
+2025-11-01 14:13:49,189 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-31
+2025-11-01 14:13:49,189 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-31
+2025-11-01 14:13:49,251 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-25
+2025-11-01 14:13:49,251 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-25
+2025-11-01 14:13:49,358 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-36
+2025-11-01 14:13:49,381 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-32
+2025-11-01 14:13:49,381 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-32
+2025-11-01 14:13:49,558 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-37
+2025-11-01 14:13:49,584 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-33
+2025-11-01 14:13:49,585 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-33
+2025-11-01 14:13:49,757 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-38
+2025-11-01 14:13:49,781 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-34
+2025-11-01 14:13:49,782 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-34
+2025-11-01 14:13:49,957 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-39
+2025-11-01 14:13:49,994 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-35
+2025-11-01 14:13:49,994 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-35
+2025-11-01 14:13:50,157 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-40
+2025-11-01 14:13:50,192 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-36
+2025-11-01 14:13:50,193 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-36
+2025-11-01 14:13:50,357 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-41
+2025-11-01 14:13:50,376 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-37
+2025-11-01 14:13:50,376 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-37
+2025-11-01 14:13:50,556 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-42
+2025-11-01 14:13:50,572 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-38
+2025-11-01 14:13:50,572 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-38
+2025-11-01 14:13:50,758 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-43
+2025-11-01 14:13:50,791 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-39
+2025-11-01 14:13:50,792 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-39
+2025-11-01 14:13:50,958 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-44
+2025-11-01 14:13:50,983 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-40
+2025-11-01 14:13:50,983 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-40
+2025-11-01 14:13:51,157 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-45
+2025-11-01 14:13:51,175 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-41
+2025-11-01 14:13:51,175 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-41
+2025-11-01 14:13:51,358 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-46
+2025-11-01 14:13:51,389 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-42
+2025-11-01 14:13:51,389 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-42
+2025-11-01 14:13:51,558 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-47
+2025-11-01 14:13:51,587 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-43
+2025-11-01 14:13:51,587 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-43
+2025-11-01 14:13:51,759 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-48
+2025-11-01 14:13:51,807 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-44
+2025-11-01 14:13:51,807 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-44
+2025-11-01 14:13:51,957 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-49
+2025-11-01 14:13:51,977 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-45
+2025-11-01 14:13:51,977 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-45
+2025-11-01 14:13:52,157 INFO o.a.j.t.JMeterThread: Thread started: Thread Group - 50 Usuarios 1-50
+2025-11-01 14:13:52,188 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-46
+2025-11-01 14:13:52,189 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-46
+2025-11-01 14:13:52,421 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-47
+2025-11-01 14:13:52,422 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-47
+2025-11-01 14:13:52,591 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-48
+2025-11-01 14:13:52,591 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-48
+2025-11-01 14:13:52,805 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-49
+2025-11-01 14:13:52,806 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-49
+2025-11-01 14:13:52,987 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group - 50 Usuarios 1-50
+2025-11-01 14:13:52,989 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group - 50 Usuarios 1-50
+2025-11-01 14:13:52,990 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-01 14:13:52,992 INFO o.a.j.r.Summariser: summary =     50 in 00:00:11 =    4.7/s Avg:  2395 Min:   812 Max:  6096 Err:     8 (16.00%)
+2025-11-01 14:13:52,992 INFO o.a.j.JMeter: Generating Dashboard
+2025-11-01 14:13:52,993 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2025-11-01 14:13:53,005 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2025-11-01 14:13:53,060 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2025-11-01 14:13:53,060 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2025-11-01 14:13:53,061 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2025-11-01 14:13:53,061 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2025-11-01 14:13:53,063 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2025-11-01 14:13:53,064 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2025-11-01 14:13:53,064 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2025-11-01 14:13:53,064 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2025-11-01 14:13:53,072 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2025-11-01 14:13:53,072 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2025-11-01 14:13:53,072 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2025-11-01 14:13:53,072 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2025-11-01 14:13:53,075 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2025-11-01 14:13:53,075 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 1050 samples
+2025-11-01 14:13:53,075 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2025-11-01 14:13:53,075 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2025-11-01 14:13:53,075 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2025-11-01 14:13:53,075 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2025-11-01 14:13:53,075 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2025-11-01 14:13:53,075 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2025-11-01 14:13:53,076 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2025-11-01 14:13:53,076 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2025-11-01 14:13:53,076 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2025-11-01 14:13:53,076 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2025-11-01 14:13:53,076 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 2250 samples
+2025-11-01 14:13:53,076 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 450 samples
+2025-11-01 14:13:53,076 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 150 samples
+2025-11-01 14:13:53,077 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 150 samples produced in 53ms on channel 0
+2025-11-01 14:13:53,077 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2025-11-01 14:13:53,110 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2025-11-01 14:13:53,110 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2025-11-01 14:13:53,110 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2025-11-01 14:13:53,111 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2025-11-01 14:13:53,111 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /Users/cindy.garcia/Desktop/Samy/pruebas/jmeter/report/statistics.json
+2025-11-01 14:13:53,130 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2025-11-01 14:13:53,131 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /Users/cindy.garcia/Desktop/Samy/pruebas/jmeter/report
+2025-11-01 14:13:53,176 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /Users/cindy.garcia/Desktop/Samy/pruebas/jmeter/report, creating folder structure
+2025-11-01 14:13:53,178 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/report-template' to '/Users/cindy.garcia/Desktop/Samy/pruebas/jmeter/report', got message: /Users/cindy.garcia/Desktop/Samy/pruebas/jmeter/report, found non empty folder with following content [/Users/cindy.garcia/Desktop/Samy/pruebas/jmeter/report/statistics.json], will be ignored
+2025-11-01 14:13:53,337 INFO o.a.j.JMeter: Dashboard generated
