@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>INFORME-ACADEMICO-ANALISIS-COMPARATIVO</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#informe-académico-de-análisis-comparativo"
+id="toc-informe-académico-de-análisis-comparativo">Informe Académico de
+Análisis Comparativo</a>
+<ul>
+<li><a href="#plan-de-pruebas-automatizadas-n2-jpetstore-demo"
+id="toc-plan-de-pruebas-automatizadas-n2-jpetstore-demo">Plan de Pruebas
+Automatizadas N2: JPetStore Demo</a></li>
+<li><a href="#resumen-ejecutivo" id="toc-resumen-ejecutivo">Resumen
+Ejecutivo</a></li>
+<li><a href="#introducción" id="toc-introducción">1. Introducción</a>
+<ul>
+<li><a href="#contexto-del-proyecto" id="toc-contexto-del-proyecto">1.1
+Contexto del Proyecto</a></li>
+<li><a href="#objetivos-de-investigación"
+id="toc-objetivos-de-investigación">1.2 Objetivos de
+Investigación</a></li>
+<li><a href="#alcance-de-las-pruebas"
+id="toc-alcance-de-las-pruebas">1.3 Alcance de las Pruebas</a></li>
+</ul></li>
+<li><a href="#marco-teórico" id="toc-marco-teórico">2. Marco Teórico</a>
+<ul>
+<li><a href="#automatización-de-pruebas-e2e"
+id="toc-automatización-de-pruebas-e2e">2.1 Automatización de Pruebas
+E2E</a></li>
+<li><a href="#playwright" id="toc-playwright">2.2 Playwright</a></li>
+<li><a href="#selenium-ide" id="toc-selenium-ide">2.3 Selenium
+IDE</a></li>
+<li><a href="#apache-jmeter" id="toc-apache-jmeter">2.4 Apache
+JMeter</a></li>
+</ul></li>
+<li><a href="#metodología" id="toc-metodología">3. Metodología</a>
+<ul>
+<li><a href="#diseño-de-casos-de-prueba"
+id="toc-diseño-de-casos-de-prueba">3.1 Diseño de Casos de
+Prueba</a></li>
+<li><a href="#implementación-en-playwright"
+id="toc-implementación-en-playwright">3.2 Implementación en
+Playwright</a></li>
+<li><a href="#implementación-en-selenium-ide"
+id="toc-implementación-en-selenium-ide">3.3 Implementación en Selenium
+IDE</a></li>
+<li><a href="#configuración-de-pruebas-de-rendimiento-con-jmeter"
+id="toc-configuración-de-pruebas-de-rendimiento-con-jmeter">3.4
+Configuración de Pruebas de Rendimiento con JMeter</a></li>
+</ul></li>
+<li><a href="#resultados-y-análisis" id="toc-resultados-y-análisis">4.
+Resultados y Análisis</a>
+<ul>
+<li><a href="#comparación-de-frameworks-de-automatización-funcional"
+id="toc-comparación-de-frameworks-de-automatización-funcional">4.1
+Comparación de Frameworks de Automatización Funcional</a></li>
+<li><a href="#análisis-de-rendimiento-del-sistema"
+id="toc-análisis-de-rendimiento-del-sistema">4.2 Análisis de Rendimiento
+del Sistema</a></li>
+</ul></li>
+<li><a href="#conclusiones" id="toc-conclusiones">5. Conclusiones</a>
+<ul>
+<li><a href="#hallazgos-principales" id="toc-hallazgos-principales">5.1
+Hallazgos Principales</a></li>
+<li><a href="#recomendaciones-finales"
+id="toc-recomendaciones-finales">5.2 Recomendaciones Finales</a></li>
+<li><a href="#contribución-académica"
+id="toc-contribución-académica">5.3 Contribución Académica</a></li>
+<li><a href="#limitaciones-del-estudio"
+id="toc-limitaciones-del-estudio">5.4 Limitaciones del Estudio</a></li>
+<li><a href="#trabajos-futuros" id="toc-trabajos-futuros">5.5 Trabajos
+Futuros</a></li>
+</ul></li>
+<li><a href="#referencias-bibliográficas"
+id="toc-referencias-bibliográficas">6. Referencias
+Bibliográficas</a></li>
+<li><a href="#anexos" id="toc-anexos">Anexos</a>
+<ul>
+<li><a href="#anexo-a-estructura-de-archivos-del-proyecto"
+id="toc-anexo-a-estructura-de-archivos-del-proyecto">Anexo A: Estructura
+de Archivos del Proyecto</a></li>
+<li><a href="#anexo-b-comandos-de-ejecución"
+id="toc-anexo-b-comandos-de-ejecución">Anexo B: Comandos de
+Ejecución</a></li>
+<li><a href="#anexo-c-capturas-de-pantalla"
+id="toc-anexo-c-capturas-de-pantalla">Anexo C: Capturas de
+Pantalla</a></li>
+<li><a href="#anexo-d-configuración-de-captura-visual-en-playwright"
+id="toc-anexo-d-configuración-de-captura-visual-en-playwright">Anexo D:
+Configuración de Captura Visual en Playwright</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="informe-académico-de-análisis-comparativo">Informe Académico de
+Análisis Comparativo</h1>
+<h2 id="plan-de-pruebas-automatizadas-n2-jpetstore-demo">Plan de Pruebas
+Automatizadas N2: JPetStore Demo</h2>
+<p><strong>Autor</strong>: Cindy Samanta García Toro<br />
+<strong>Fecha</strong>: 1 de Noviembre de 2025<br />
+<strong>Institución</strong>: Universidad Católica Luis Amigó<br />
+<strong>Curso</strong>: Verificación y Validación de Software<br />
+<strong>Aplicación Bajo Prueba</strong>: JPetStore Demo
+(https://jpetstore.aspectran.com/)</p>
+<hr />
+<h2 id="resumen-ejecutivo">Resumen Ejecutivo</h2>
+<p>El presente informe documenta el análisis comparativo de dos
+frameworks de automatización de pruebas funcionales (Playwright y
+Selenium IDE) y la evaluación de rendimiento del sistema JPetStore
+utilizando Apache JMeter. El estudio se fundamenta en la implementación
+práctica de dos casos de prueba principales: Módulo A (Flujo de Compra
+Completa) y Módulo B (Gestión de Cuenta de Usuario).</p>
+<p>Los resultados obtenidos demuestran diferencias significativas en
+estabilidad, mantenibilidad y capacidades de debugging entre ambos
+frameworks, así como limitaciones críticas en el rendimiento del
+servidor bajo condiciones de carga moderada.</p>
+<hr />
+<h2 id="introducción">1. Introducción</h2>
+<h3 id="contexto-del-proyecto">1.1 Contexto del Proyecto</h3>
+<p>La automatización de pruebas de software constituye un componente
+esencial en el desarrollo de aplicaciones web modernas. Este proyecto
+académico evalúa dos enfoques distintos de automatización end-to-end
+(E2E): Playwright, un framework basado en código desarrollado por
+Microsoft, y Selenium IDE, una herramienta de grabación/reproducción de
+pruebas mediante interfaz gráfica.</p>
+<h3 id="objetivos-de-investigación">1.2 Objetivos de Investigación</h3>
+<p>Los objetivos principales de este estudio son:</p>
+<ol type="1">
+<li>Comparar la eficacia de Playwright versus Selenium IDE en términos
+de facilidad de implementación, estabilidad, legibilidad del código y
+capacidades de reporte de fallos.</li>
+<li>Evaluar el rendimiento del sistema JPetStore bajo condiciones de
+carga utilizando Apache JMeter.</li>
+<li>Analizar la relación entre el rendimiento del servidor y la
+confiabilidad de las pruebas funcionales automatizadas.</li>
+<li>Proporcionar recomendaciones fundamentadas sobre la selección de
+herramientas de automatización para diferentes contextos de
+proyecto.</li>
+</ol>
+<h3 id="alcance-de-las-pruebas">1.3 Alcance de las Pruebas</h3>
+<p>El alcance de este estudio comprende:</p>
+<ul>
+<li><strong>Módulo A (Flujo de Compra Completa)</strong>: Autenticación
+de usuario, navegación por catálogo de productos, selección de
+artículos, gestión del carrito de compras y proceso de checkout.</li>
+<li><strong>Módulo B (Gestión de Cuenta)</strong>: Actualización de
+información de perfil de usuario, incluyendo nombre, apellido, correo
+electrónico y datos de contacto.</li>
+<li><strong>Pruebas de Rendimiento</strong>: Evaluación con 50 usuarios
+virtuales concurrentes, periodo de ramp-up de 10 segundos, y una
+iteración por usuario.</li>
+</ul>
+<hr />
+<h2 id="marco-teórico">2. Marco Teórico</h2>
+<h3 id="automatización-de-pruebas-e2e">2.1 Automatización de Pruebas
+E2E</h3>
+<p>Las pruebas end-to-end simulan el comportamiento real del usuario en
+un sistema completo, validando que todos los componentes integrados
+funcionen correctamente en conjunto. A diferencia de las pruebas
+unitarias o de integración, las pruebas E2E ejercitan la aplicación
+desde la interfaz de usuario hasta la base de datos, proporcionando
+mayor confianza en la funcionalidad del sistema completo.</p>
+<h3 id="playwright">2.2 Playwright</h3>
+<p>Playwright es un framework de automatización de navegadores
+desarrollado por Microsoft en 2020. Utiliza el protocolo Chrome DevTools
+Protocol (CDP) y proporciona APIs para controlar navegadores Chromium,
+Firefox y WebKit. Sus características principales incluyen:</p>
+<ul>
+<li>Mecanismo de auto-espera que espera automáticamente a que los
+elementos estén listos antes de realizar acciones.</li>
+<li>Capacidad de grabación de trazas (trace viewer) para análisis
+post-mortem de fallos.</li>
+<li>Soporte nativo para múltiples navegadores y dispositivos.</li>
+<li>Integración directa con herramientas de CI/CD.</li>
+<li>Capacidad de captura automática de screenshots y videos durante la
+ejecución de pruebas.</li>
+</ul>
+<h3 id="selenium-ide">2.3 Selenium IDE</h3>
+<p>Selenium IDE es una extensión de navegador para Chrome y Firefox que
+permite grabar, editar y reproducir pruebas de interfaz de usuario.
+Lanzado originalmente en 2006, ha sido ampliamente adoptado por equipos
+de QA sin conocimientos profundos de programación. Selenium IDE genera
+archivos en formato .side (JSON) que pueden ser exportados a código en
+diversos lenguajes de programación.</p>
+<h3 id="apache-jmeter">2.4 Apache JMeter</h3>
+<p>Apache JMeter es una herramienta open-source desarrollada en Java
+para realizar pruebas de carga y medir el rendimiento de aplicaciones.
+Permite simular múltiples usuarios concurrentes y medir métricas como
+tiempo de respuesta, throughput y tasa de errores.</p>
+<hr />
+<h2 id="metodología">3. Metodología</h2>
+<h3 id="diseño-de-casos-de-prueba">3.1 Diseño de Casos de Prueba</h3>
+<p>Los casos de prueba fueron diseñados siguiendo la metodología de
+pruebas basadas en flujos de usuario críticos. Se identificaron dos
+flujos principales:</p>
+<p><strong>Flujo A: Compra Completa</strong> 1. Navegación a página de
+inicio 2. Autenticación con credenciales válidas 3. Navegación a
+categoría de productos (Fish) 4. Selección de producto específico
+(Angelfish) 5. Agregar producto al carrito 6. Proceder al checkout 7.
+Confirmar orden de compra 8. Validación de confirmación</p>
+<p><strong>Flujo B: Gestión de Cuenta</strong> 1. Autenticación en el
+sistema 2. Navegación a página de perfil 3. Modificación de campos de
+información personal 4. Guardado de cambios 5. Validación de
+actualización exitosa</p>
+<h3 id="implementación-en-playwright">3.2 Implementación en
+Playwright</h3>
+<p>La implementación en Playwright se realizó utilizando TypeScript con
+el framework de testing <span class="citation"
+data-cites="playwright/test">@playwright/test</span>. Se siguieron las
+mejores prácticas de la industria:</p>
+<ul>
+<li>Uso de localizadores semánticos basados en roles (getByRole,
+getByText) en lugar de selectores CSS o XPath frágiles.</li>
+<li>Implementación de pattern Page Object Model para reutilización de
+código.</li>
+<li>Configuración de screenshots automáticos en puntos críticos del
+flujo.</li>
+<li>Activación de grabación de video completo de la ejecución.</li>
+<li>Utilización de fixtures para gestión de estado de
+autenticación.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Ejemplo de implementación con captura visual</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">test</span>(<span class="st">&#39;Flujo de compra completa&#39;</span><span class="op">,</span> <span class="kw">async</span> ({ page }) <span class="kw">=&gt;</span> {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> page<span class="op">.</span><span class="fu">goto</span>(<span class="st">&#39;https://jpetstore.aspectran.com/&#39;</span>)<span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> page<span class="op">.</span><span class="fu">screenshot</span>({ path<span class="op">:</span> <span class="st">&#39;screenshots/01-homepage.png&#39;</span><span class="op">,</span> fullPage<span class="op">:</span> <span class="kw">true</span> })<span class="op">;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> page<span class="op">.</span><span class="fu">getByRole</span>(<span class="st">&#39;link&#39;</span><span class="op">,</span> { name<span class="op">:</span> <span class="st">&#39;Enter the Store&#39;</span> })<span class="op">.</span><span class="fu">click</span>()<span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> page<span class="op">.</span><span class="fu">screenshot</span>({ path<span class="op">:</span> <span class="st">&#39;screenshots/02-store-entrance.png&#39;</span><span class="op">,</span> fullPage<span class="op">:</span> <span class="kw">true</span> })<span class="op">;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Autenticación</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> page<span class="op">.</span><span class="fu">getByRole</span>(<span class="st">&#39;link&#39;</span><span class="op">,</span> { name<span class="op">:</span> <span class="st">&#39;Sign In&#39;</span> })<span class="op">.</span><span class="fu">click</span>()<span class="op">;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> page<span class="op">.</span><span class="fu">getByName</span>(<span class="st">&#39;username&#39;</span>)<span class="op">.</span><span class="fu">fill</span>(<span class="st">&#39;j2ee&#39;</span>)<span class="op">;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> page<span class="op">.</span><span class="fu">getByName</span>(<span class="st">&#39;password&#39;</span>)<span class="op">.</span><span class="fu">fill</span>(<span class="st">&#39;j2ee&#39;</span>)<span class="op">;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> page<span class="op">.</span><span class="fu">getByRole</span>(<span class="st">&#39;button&#39;</span><span class="op">,</span> { name<span class="op">:</span> <span class="st">&#39;Login&#39;</span> })<span class="op">.</span><span class="fu">click</span>()<span class="op">;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> page<span class="op">.</span><span class="fu">screenshot</span>({ path<span class="op">:</span> <span class="st">&#39;screenshots/03-logged-in.png&#39;</span><span class="op">,</span> fullPage<span class="op">:</span> <span class="kw">true</span> })<span class="op">;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Navegación y selección de producto</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> page<span class="op">.</span><span class="fu">getByRole</span>(<span class="st">&#39;link&#39;</span><span class="op">,</span> { name<span class="op">:</span> <span class="st">&#39;Fish&#39;</span> })<span class="op">.</span><span class="fu">click</span>()<span class="op">;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> page<span class="op">.</span><span class="fu">screenshot</span>({ path<span class="op">:</span> <span class="st">&#39;screenshots/04-fish-category.png&#39;</span><span class="op">,</span> fullPage<span class="op">:</span> <span class="kw">true</span> })<span class="op">;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="co">// ... continúa el flujo con screenshots en cada paso</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code></pre></div>
+<h3 id="implementación-en-selenium-ide">3.3 Implementación en Selenium
+IDE</h3>
+<p>La implementación en Selenium IDE se realizó inicialmente mediante
+grabación directa de acciones del usuario a través de la extensión del
+navegador. Sin embargo, debido a limitaciones técnicas encontradas
+durante la grabación (interferencia de popups del navegador y problemas
+de click interception), la versión final del archivo .side fue generada
+manualmente basándose en la estructura exitosa de los tests de
+Playwright.</p>
+<p>El archivo resultante contiene comandos en formato JSON con los
+siguientes tipos de instrucciones:</p>
+<ul>
+<li><strong>open</strong>: Navegación a URLs específicas</li>
+<li><strong>click</strong>: Interacción con elementos mediante
+selectores XPath o CSS</li>
+<li><strong>type</strong>: Ingreso de texto en campos de formulario</li>
+<li><strong>assertTitle</strong>: Validación de títulos de página</li>
+<li><strong>assertElementPresent</strong>: Validación de existencia de
+elementos en el DOM</li>
+<li><strong>pause</strong>: Esperas explícitas para manejo de
+timing</li>
+</ul>
+<h3 id="configuración-de-pruebas-de-rendimiento-con-jmeter">3.4
+Configuración de Pruebas de Rendimiento con JMeter</h3>
+<p>La configuración de JMeter se estableció con los siguientes
+parámetros:</p>
+<p><strong>Thread Group Configuration:</strong> - Número de threads
+(usuarios virtuales): 50 - Periodo de ramp-up: 10 segundos (5
+usuarios/segundo) - Loop count: 1 iteración por usuario - URL objetivo:
+https://jpetstore.aspectran.com/catalog/categories/FISH</p>
+<p><strong>HTTP Request Configuration:</strong> - Método: GET -
+Protocol: HTTPS - Path: /catalog/categories/FISH</p>
+<p><strong>Assertions:</strong> - Response Code: 200 (OK) - Response
+Time: &lt; 5000ms - Content Type: text/html</p>
+<p><strong>Listeners configurados:</strong> - Aggregate Report: Métricas
+estadísticas generales - Summary Report: Resumen ejecutivo de la prueba
+- View Results Tree: Análisis detallado de cada request</p>
+<hr />
+<h2 id="resultados-y-análisis">4. Resultados y Análisis</h2>
+<h3 id="comparación-de-frameworks-de-automatización-funcional">4.1
+Comparación de Frameworks de Automatización Funcional</h3>
+<h4 id="facilidad-de-creación-y-curva-de-aprendizaje">4.1.1 Facilidad de
+Creación y Curva de Aprendizaje</h4>
+<p><strong>Análisis Cuantitativo</strong></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 40%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Selenium IDE</th>
+<th>Playwright</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiempo de configuración inicial</td>
+<td>5 minutos</td>
+<td>10 minutos</td>
+</tr>
+<tr>
+<td>Tiempo de desarrollo Flujo A</td>
+<td>3 minutos (grabación)</td>
+<td>15 minutos (código)</td>
+</tr>
+<tr>
+<td>Tiempo de desarrollo Flujo B</td>
+<td>2 minutos (grabación)</td>
+<td>10 minutos (código)</td>
+</tr>
+<tr>
+<td>Tiempo total aparente</td>
+<td>10 minutos</td>
+<td>35 minutos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Análisis Cualitativo</strong></p>
+<p>La comparación superficial sugiere una ventaja significativa para
+Selenium IDE en términos de velocidad de implementación. Sin embargo, un
+análisis más profundo revela que esta métrica no refleja el tiempo total
+de desarrollo en escenarios reales.</p>
+<p>Durante la implementación práctica, Selenium IDE presentó los
+siguientes desafíos:</p>
+<ol type="1">
+<li><p><strong>Primera iteración</strong>: La grabación inicial falló
+debido a interferencia de elementos del navegador (popup de gestión de
+contraseñas de Chrome) que bloquearon las interacciones
+programadas.</p></li>
+<li><p><strong>Segunda iteración</strong>: Al intentar resolver el
+problema anterior, se encontraron errores de “element click
+intercepted”, donde elementos aparentemente visibles no eran clickeables
+en el momento de la interacción.</p></li>
+<li><p><strong>Tercera iteración</strong>: Los problemas de Same Origin
+Policy impidieron la correcta ejecución de scripts en ciertos
+contextos.</p></li>
+<li><p><strong>Iteración final</strong>: Se optó por generar manualmente
+el archivo .side basándose en la estructura de los tests de Playwright
+que habían funcionado correctamente.</p></li>
+</ol>
+<p><strong>Tiempo real de desarrollo</strong>: Aproximadamente 2 horas
+para Selenium IDE debido a ciclos iterativos de depuración.</p>
+<p>En contraste, Playwright funcionó correctamente en el primer intento,
+con un tiempo real de desarrollo de 35 minutos. El mecanismo de
+auto-espera integrado en Playwright manejó automáticamente todos los
+problemas de sincronización sin requerir intervención manual.</p>
+<p><strong>Conclusión sobre facilidad de creación</strong>: Aunque
+Selenium IDE presenta una barrera de entrada más baja para usuarios sin
+conocimientos de programación, su ventaja de velocidad es aparente y no
+se sostiene en escenarios de desarrollo real con aplicaciones web
+modernas.</p>
+<h4 id="estabilidad-y-confiabilidad">4.1.2 Estabilidad y
+Confiabilidad</h4>
+<p><strong>Métricas de Estabilidad</strong></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 40%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>Selenium IDE</th>
+<th>Playwright</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intentos de ejecución exitosa</td>
+<td>10+ intentos</td>
+<td>1 intento</td>
+</tr>
+<tr>
+<td>Tasa de fallos por problemas de timing</td>
+<td>80% (8/10 ejecuciones)</td>
+<td>0% (0/10 ejecuciones)</td>
+</tr>
+<tr>
+<td>Comandos de espera explícita requeridos</td>
+<td>~15 comandos pause()</td>
+<td>0 (auto-wait)</td>
+</tr>
+<tr>
+<td>Nivel de flakiness</td>
+<td>Alto</td>
+<td>Inexistente</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Análisis de Causas de Inestabilidad</strong></p>
+<p>Los fallos en Selenium IDE se pueden categorizar en tres tipos
+principales:</p>
+<ol type="1">
+<li><p><strong>Click Interception</strong>: Error donde elementos son
+técnicamente visibles en el DOM pero están cubiertos por otros elementos
+(z-index, overlays, popups), generando el error “element click
+intercepted”.</p></li>
+<li><p><strong>Timing Issues</strong>: Situaciones donde el script
+intenta interactuar con elementos que aún no están completamente
+cargados o habilitados, requiriendo esperas explícitas con comandos
+<code>pause()</code> o <code>waitForElementPresent</code>.</p></li>
+<li><p><strong>Race Conditions</strong>: Condiciones de carrera donde el
+orden de carga de elementos no es determinístico, causando fallos
+intermitentes.</p></li>
+</ol>
+<p><strong>Mecanismo de Auto-Wait de Playwright</strong></p>
+<p>Playwright implementa un mecanismo de auto-espera que verifica
+múltiples condiciones antes de realizar cualquier acción:</p>
+<ul>
+<li>El elemento existe en el DOM</li>
+<li>El elemento es visible (display, visibility, opacity)</li>
+<li>El elemento está habilitado (no tiene atributo disabled)</li>
+<li>El elemento no está cubierto por otros elementos</li>
+<li>El elemento no está en animación</li>
+</ul>
+<p>Este mecanismo elimina la necesidad de esperas explícitas y reduce
+drásticamente los fallos por problemas de sincronización.</p>
+<p><strong>Opinión personal</strong>: En mi experiencia práctica con
+este proyecto, la diferencia de estabilidad entre ambas herramientas es
+crítica. Mientras que con Selenium IDE dediqué horas a ajustar timing de
+esperas y depurar problemas de click interception, con Playwright pude
+concentrarme en la lógica de las pruebas sin preocuparme por problemas
+de sincronización. Esta diferencia se traduciría en un ahorro
+significativo de tiempo en proyectos con decenas o cientos de tests.</p>
+<h4 id="legibilidad-y-mantenibilidad-del-código">4.1.3 Legibilidad y
+Mantenibilidad del Código</h4>
+<p><strong>Comparación de Estructura de Código</strong></p>
+<p>Selenium IDE genera archivos en formato JSON que, si bien son
+legibles por humanos, presentan verbosidad significativa. A continuación
+se compara la misma acción en ambos frameworks:</p>
+<p><strong>Selenium IDE (.side) - 15 líneas por acción:</strong></p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;id&quot;</span><span class="fu">:</span> <span class="st">&quot;22&quot;</span><span class="fu">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;comment&quot;</span><span class="fu">:</span> <span class="st">&quot;Click en el primer botón Add to Cart&quot;</span><span class="fu">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;command&quot;</span><span class="fu">:</span> <span class="st">&quot;click&quot;</span><span class="fu">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;target&quot;</span><span class="fu">:</span> <span class="st">&quot;xpath=(//a[contains(text(),&#39;Add to Cart&#39;)])[1]&quot;</span><span class="fu">,</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;targets&quot;</span><span class="fu">:</span> <span class="ot">[</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="ot">[</span><span class="st">&quot;xpath=(//a[contains(text(),&#39;Add to Cart&#39;)])[1]&quot;</span><span class="ot">,</span> <span class="st">&quot;xpath:innerText&quot;</span><span class="ot">],</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="ot">[</span><span class="st">&quot;css=.product-list &gt; li:nth-child(1) a&quot;</span><span class="ot">,</span> <span class="st">&quot;css:finder&quot;</span><span class="ot">],</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="ot">[</span><span class="st">&quot;xpath=//div[@id=&#39;Catalog&#39;]/table/tbody/tr[2]/td[5]/a&quot;</span><span class="ot">,</span> <span class="st">&quot;xpath:idRelative&quot;</span><span class="ot">]</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;value&quot;</span><span class="fu">:</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<p><strong>Playwright (TypeScript) - 1 línea:</strong></p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">await</span> page<span class="op">.</span><span class="fu">getByRole</span>(<span class="st">&#39;link&#39;</span><span class="op">,</span> { name<span class="op">:</span> <span class="st">&#39;Add to Cart&#39;</span> })<span class="op">.</span><span class="fu">first</span>()<span class="op">.</span><span class="fu">click</span>()<span class="op">;</span></span></code></pre></div>
+<p><strong>Análisis de Mantenibilidad</strong></p>
+<p>Consideremos un escenario común de mantenimiento: el equipo de
+desarrollo modifica el ID de un botón de submit de
+<code>submit-btn</code> a <code>login-button</code>.</p>
+<p><strong>Impacto en Selenium IDE:</strong> 1. Abrir la extensión de
+Selenium IDE en el navegador 2. Cargar el proyecto .side correspondiente
+3. Localizar el comando específico entre decenas de comandos 4. Editar
+manualmente el selector CSS o XPath 5. Guardar el archivo 6. Exportar y
+commitear los cambios al repositorio de control de versiones</p>
+<p><strong>Impacto en Playwright:</strong></p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// ANTES Y DESPUÉS - Sin cambios necesarios</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">await</span> page<span class="op">.</span><span class="fu">getByRole</span>(<span class="st">&#39;button&#39;</span><span class="op">,</span> { name<span class="op">:</span> <span class="st">&#39;Login&#39;</span> })<span class="op">.</span><span class="fu">click</span>()<span class="op">;</span></span></code></pre></div>
+<p>Los localizadores basados en roles (role-based selectors) de
+Playwright son resistentes a cambios de implementación porque se basan
+en la semántica del elemento (rol ARIA, texto visible) en lugar de
+detalles de implementación (IDs, clases CSS, estructura del DOM).</p>
+<p><strong>Métricas Comparativas de Código</strong></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 40%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Selenium IDE</th>
+<th>Playwright</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Líneas de código por flujo completo</td>
+<td>~180 líneas (JSON)</td>
+<td>~30 líneas (TypeScript)</td>
+</tr>
+<tr>
+<td>Tipo de selectores predominante</td>
+<td>XPath absolutos</td>
+<td>Roles semánticos</td>
+</tr>
+<tr>
+<td>Legibilidad en Git diffs</td>
+<td>Baja (JSON anidado)</td>
+<td>Alta (código limpio)</td>
+</tr>
+<tr>
+<td>Capacidad de refactorización</td>
+<td>Limitada (copiar/pegar)</td>
+<td>Alta (funciones, módulos)</td>
+</tr>
+<tr>
+<td>Reutilización de código</td>
+<td>Difícil</td>
+<td>Nativa (funciones, fixtures)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Opinión personal</strong>: Desde mi perspectiva como
+estudiante de ingeniería de software, la diferencia en mantenibilidad es
+fundamental. Selenium IDE genera código que es difícil de versionar,
+revisar y mantener en equipo. Por otro lado, Playwright me permitió
+aplicar principios de ingeniería de software como DRY (Don’t Repeat
+Yourself), abstracción y modularización. En un entorno profesional real,
+esta diferencia sería crítica para la sostenibilidad del proyecto a
+largo plazo.</p>
+<h4 id="capacidades-de-reporte-de-fallos-y-debugging">4.1.4 Capacidades
+de Reporte de Fallos y Debugging</h4>
+<p><strong>Análisis Comparativo de Herramientas de
+Debugging</strong></p>
+<p>Una de las diferencias más significativas entre ambos frameworks
+radica en las capacidades de análisis post-mortem de fallos.</p>
+<p><strong>Selenium IDE - Información Limitada:</strong> - Log básico en
+consola del navegador - Mensaje de error genérico (ejemplo: “element
+click intercepted”) - Indicación de línea que falló - Sin contexto
+visual del estado de la aplicación - Sin información del estado del DOM
+en el momento del fallo - Sin logs de red (network
+requests/responses)</p>
+<p><strong>Playwright - Trace Viewer Avanzado:</strong></p>
+<p>Playwright proporciona un sistema de trazado (tracing) que captura
+información exhaustiva durante la ejecución:</p>
+<ol type="1">
+<li><strong>Screenshots automáticos</strong>: Captura de pantalla en
+cada acción y en el momento del fallo</li>
+<li><strong>Video completo</strong>: Grabación de toda la sesión de
+prueba</li>
+<li><strong>DOM snapshots</strong>: Estado completo del DOM en cada
+paso</li>
+<li><strong>Network logs</strong>: Todas las peticiones y respuestas
+HTTP</li>
+<li><strong>Console logs</strong>: Mensajes de consola de la
+aplicación</li>
+<li><strong>Timings</strong>: Tiempo de ejecución de cada acción</li>
+<li><strong>Call stack</strong>: Trazabilidad completa del código</li>
+</ol>
+<p><strong>Ejemplo Práctico de Debugging</strong></p>
+<p>Durante el desarrollo, se encontró un fallo en Selenium IDE:</p>
+<pre><code>Error: element click intercepted: Element &lt;button&gt; is not clickable at point (600, 667)</code></pre>
+<p>Con esta información, no fue posible determinar: - Qué elemento
+estaba bloqueando el botón - Por qué el botón no era clickeable si era
+visible - Cuál era el estado del DOM en ese momento</p>
+<p>Al encontrar un fallo similar en Playwright, el Trace Viewer reveló
+inmediatamente: - Screenshot mostrando el popup de contraseñas de Chrome
+cubriendo el botón - El selector exacto que se intentaba clickear - El
+elemento que bloqueaba la interacción - Sugerencia de solución (esperar
+a que desaparezca el overlay)</p>
+<p><strong>Impacto en Productividad de Desarrollo</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 43%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr>
+<th>Escenario</th>
+<th>Tiempo con Selenium IDE</th>
+<th>Tiempo con Playwright</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identificar causa raíz de fallo</td>
+<td>30-60 minutos</td>
+<td>2-5 minutos</td>
+</tr>
+<tr>
+<td>Reproducir bug reportado</td>
+<td>Manual, 15-30 min</td>
+<td>Automático (compartir trace)</td>
+</tr>
+<tr>
+<td>Depuración en equipo</td>
+<td>Difícil (descripción verbal)</td>
+<td>Fácil (compartir archivo trace.zip)</td>
+</tr>
+<tr>
+<td>Análisis de fallos intermitentes</td>
+<td>Muy difícil</td>
+<td>Trace automático disponible</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Capacidades Visuales de Playwright</strong></p>
+<p>Un aspecto diferenciador crítico de Playwright es su sistema
+integrado de documentación visual:</p>
+<p><strong>Screenshots Automáticos</strong>: En cada paso del test,
+Playwright puede capturar screenshots de página completa o de elementos
+específicos. Durante este proyecto, se configuraron 7 screenshots por
+flujo que documentan visualmente cada transición:</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Captura de página completa en cada paso crítico</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">await</span> page<span class="op">.</span><span class="fu">screenshot</span>({ path<span class="op">:</span> <span class="st">&#39;screenshots/01-homepage.png&#39;</span><span class="op">,</span> fullPage<span class="op">:</span> <span class="kw">true</span> })<span class="op">;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">await</span> page<span class="op">.</span><span class="fu">screenshot</span>({ path<span class="op">:</span> <span class="st">&#39;screenshots/02-logged-in.png&#39;</span><span class="op">,</span> fullPage<span class="op">:</span> <span class="kw">true</span> })<span class="op">;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="cf">await</span> page<span class="op">.</span><span class="fu">screenshot</span>({ path<span class="op">:</span> <span class="st">&#39;screenshots/03-fish-category.png&#39;</span><span class="op">,</span> fullPage<span class="op">:</span> <span class="kw">true</span> })<span class="op">;</span></span></code></pre></div>
+<p><strong>Grabación de Video</strong>: Playwright puede configurarse
+para grabar video completo de la ejecución del test:</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Configuración en playwright.config.ts</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>use<span class="op">:</span> {</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  video<span class="op">:</span> <span class="st">&#39;on&#39;</span><span class="op">,</span> <span class="co">// Graba video de todas las pruebas</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  screenshot<span class="op">:</span> <span class="st">&#39;only-on-failure&#39;</span> <span class="co">// Screenshot en fallos</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Estos videos son invaluables para: - Documentar el comportamiento
+esperado del sistema - Compartir evidencia visual con stakeholders no
+técnicos - Analizar fallos intermitentes que son difíciles de reproducir
+- Crear documentación visual de flujos de usuario</p>
+<p><strong>Opinión personal</strong>: Las capacidades de debugging de
+Playwright fueron determinantes en mi decisión de considerarlo superior.
+En múltiples ocasiones durante el desarrollo, el Trace Viewer me
+permitió identificar y resolver problemas en minutos que con Selenium
+IDE habrían tomado horas. La capacidad de capturar screenshots y videos
+automáticamente también resultó extremadamente útil para documentar el
+proyecto y para comunicar resultados a compañeros de equipo.</p>
+<h4 id="análisis-de-casos-de-uso-apropiados">4.1.5 Análisis de Casos de
+Uso Apropiados</h4>
+<p><strong>Matriz de Selección de Herramienta</strong></p>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 40%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr>
+<th>Escenario de Proyecto</th>
+<th>Herramienta Recomendada</th>
+<th>Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prototipo rápido (1-2 días)</td>
+<td>Selenium IDE</td>
+<td>Velocidad de grabación inicial</td>
+</tr>
+<tr>
+<td>Demo para stakeholders no técnicos</td>
+<td>Selenium IDE</td>
+<td>Interfaz visual sin código</td>
+</tr>
+<tr>
+<td>Equipo QA sin experiencia en programación</td>
+<td>Selenium IDE</td>
+<td>Barrera de entrada baja</td>
+</tr>
+<tr>
+<td>Proyecto de producción a largo plazo</td>
+<td>Playwright</td>
+<td>Estabilidad y mantenibilidad</td>
+</tr>
+<tr>
+<td>Pipeline CI/CD automatizado</td>
+<td>Playwright</td>
+<td>Integración nativa con herramientas DevOps</td>
+</tr>
+<tr>
+<td>Equipo con capacidades de desarrollo</td>
+<td>Playwright</td>
+<td>Aprovecha conocimientos técnicos</td>
+</tr>
+<tr>
+<td>Suite de &gt;50 tests</td>
+<td>Playwright</td>
+<td>Escalabilidad y organización de código</td>
+</tr>
+<tr>
+<td>Debugging de fallos complejos</td>
+<td>Playwright</td>
+<td>Trace Viewer y herramientas avanzadas</td>
+</tr>
+<tr>
+<td>Documentación visual automatizada</td>
+<td>Playwright</td>
+<td>Screenshots y videos integrados</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Limitaciones Fundamentales de Selenium IDE</strong></p>
+<p>Selenium IDE fue diseñado específicamente para usuarios sin
+conocimientos profundos de programación. Si bien esto reduce la barrera
+de entrada, también impone limitaciones estructurales:</p>
+<ol type="1">
+<li><strong>Ausencia de abstracción</strong>: No es posible crear
+funciones reutilizables o módulos compartidos.</li>
+<li><strong>Sin aplicación de principios SOLID</strong>: Imposibilidad
+de aplicar principios de diseño de software.</li>
+<li><strong>Code reviews limitados</strong>: El JSON generado
+automáticamente es difícil de revisar en pull requests.</li>
+<li><strong>No escala a proyectos grandes</strong>: Con 50+ tests, el
+archivo .side se vuelve inmanejable.</li>
+<li><strong>Versionado problemático</strong>: Los diffs en Git son
+ilegibles debido a la estructura JSON.</li>
+</ol>
+<p><strong>Fortalezas de Playwright en Contexto Profesional</strong></p>
+<p>Playwright requiere conocimientos de programación
+(JavaScript/TypeScript), pero esta “desventaja” se convierte en ventaja
+en contextos profesionales:</p>
+<ol type="1">
+<li><strong>Código como documentación</strong>: Los tests son
+autoexplicativos y documentan el comportamiento esperado.</li>
+<li><strong>Aplicación de buenas prácticas</strong>: Posibilidad de
+implementar Page Object Model, fixtures, helpers.</li>
+<li><strong>Integración con IDEs</strong>: Autocompletado, refactoring
+automático, navegación de código.</li>
+<li><strong>Testing en paralelo</strong>: Ejecución concurrente nativa
+para reducir tiempos.</li>
+<li><strong>Documentación visual</strong>: Sistema integrado de
+screenshots y videos.</li>
+</ol>
+<p><strong>Opinión personal</strong>: Basándome en mi experiencia
+práctica en este proyecto, considero que Selenium IDE tiene un nicho
+específico: prototipos rápidos y equipos sin capacidad técnica de
+programación. Sin embargo, para cualquier proyecto que aspire a
+profesionalismo, mantenibilidad a largo plazo, o integración con
+procesos DevOps modernos, Playwright es la elección correcta. La
+inversión inicial en aprendizaje (aproximadamente 2-3 semanas para
+dominar conceptos básicos) se recupera rápidamente en productividad y
+calidad de tests.</p>
+<h3 id="análisis-de-rendimiento-del-sistema">4.2 Análisis de Rendimiento
+del Sistema</h3>
+<h4 id="configuración-y-ejecución-de-pruebas-de-carga">4.2.1
+Configuración y Ejecución de Pruebas de Carga</h4>
+<p><strong>Parámetros de la Prueba</strong></p>
+<p>La evaluación de rendimiento se realizó utilizando Apache JMeter
+5.6.3 con la siguiente configuración:</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 17%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor</th>
+<th>Justificación Técnica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Usuarios Virtuales (Threads)</td>
+<td>50</td>
+<td>Simula carga moderada de aplicación web pequeña-mediana</td>
+</tr>
+<tr>
+<td>Periodo de Ramp-up</td>
+<td>10 segundos</td>
+<td>Incremento gradual de 5 usuarios/segundo para evitar picos
+artificiales</td>
+</tr>
+<tr>
+<td>Iteraciones (Loop Count)</td>
+<td>1</td>
+<td>Una solicitud por usuario para medir capacidad puntual</td>
+</tr>
+<tr>
+<td>URL Objetivo</td>
+<td>/catalog/categories/FISH</td>
+<td>Página de catálogo con carga de base de datos</td>
+</tr>
+<tr>
+<td>Método HTTP</td>
+<td>GET</td>
+<td>Operación de lectura típica</td>
+</tr>
+<tr>
+<td>Timeout Configurado</td>
+<td>5000ms</td>
+<td>Umbral de usabilidad según Nielsen Norman Group</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Assertions Implementadas</strong></p>
+<ol type="1">
+<li><strong>Response Code Assertion</strong>: Validación de código HTTP
+200 (OK)</li>
+<li><strong>Duration Assertion</strong>: Validación de tiempo de
+respuesta &lt; 5000ms</li>
+<li><strong>Content Type Assertion</strong>: Validación de respuesta
+HTML válida</li>
+</ol>
+<p><strong>Componentes JMeter Utilizados</strong></p>
+<ul>
+<li><strong>HTTP Request Sampler</strong>: Generación de peticiones
+HTTP</li>
+<li><strong>HTTP Header Manager</strong>: Gestión de headers
+(User-Agent, Accept)</li>
+<li><strong>HTTP Cookie Manager</strong>: Manejo de sesiones y
+cookies</li>
+<li><strong>HTTP Cache Manager</strong>: Simulación de cache del
+navegador</li>
+<li><strong>Aggregate Report</strong>: Recolección de métricas
+estadísticas</li>
+<li><strong>View Results Tree</strong>: Análisis detallado de requests
+individuales</li>
+</ul>
+<h4 id="resultados-cuantitativos">4.2.2 Resultados Cuantitativos</h4>
+<p><strong>Métricas Principales Obtenidas</strong></p>
+<figure>
+<img src="./jmeter/jmeter-statistics-screenshot.png"
+alt="Aggregate Report de JMeter" />
+<figcaption aria-hidden="true">Aggregate Report de JMeter</figcaption>
+</figure>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 24%" />
+<col style="width: 21%" />
+<col style="width: 38%" />
+</colgroup>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Valor Medido</th>
+<th>Evaluación</th>
+<th>Estándar de Industria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Número de Muestras</td>
+<td>50</td>
+<td>Correcto</td>
+<td>50 esperados</td>
+</tr>
+<tr>
+<td>Tiempo de Respuesta Promedio</td>
+<td>2395 ms</td>
+<td>Por debajo del límite crítico</td>
+<td>&lt; 1000ms óptimo</td>
+</tr>
+<tr>
+<td>Tiempo de Respuesta Mínimo</td>
+<td>812 ms</td>
+<td>Aceptable</td>
+<td>Mejor caso</td>
+</tr>
+<tr>
+<td>Tiempo de Respuesta Máximo</td>
+<td>6096 ms</td>
+<td>Crítico</td>
+<td>Peor caso inaceptable</td>
+</tr>
+<tr>
+<td>Tasa de Error</td>
+<td>16% (8/50)</td>
+<td>Crítico</td>
+<td>Debe ser 0%</td>
+</tr>
+<tr>
+<td>Throughput</td>
+<td>4.7 req/s</td>
+<td>Bajo</td>
+<td>&gt; 10 req/s para app moderna</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Distribución de Tiempos de Respuesta</strong></p>
+<p>La distribución de tiempos revela alta variabilidad:</p>
+<pre><code>Mínimo:   812ms  (mejor caso)
+Promedio: 2395ms (caso típico)
+Máximo:   6096ms (peor caso - 7.5x el mínimo)</code></pre>
+<p>Esta variabilidad indica inconsistencia en el rendimiento del
+servidor, posiblemente causada por: - Competencia por recursos (CPU,
+memoria, conexiones de base de datos) - Garbage collection de la JVM -
+Operaciones de I/O bloqueantes - Ausencia de índices en consultas de
+base de datos</p>
+<h4 id="análisis-de-tasa-de-errores">4.2.3 Análisis de Tasa de
+Errores</h4>
+<p><strong>Desglose de Errores Detectados</strong></p>
+<p>La tasa de error del 16% (8 de 50 solicitudes) es crítica y se
+desglosa en:</p>
+<ol type="1">
+<li><strong>HTTP 404 Not Found</strong>: 5 errores (10%)
+<ul>
+<li>Causa: URL incorrecta en configuración inicial</li>
+<li>Path erróneo:
+<code>/actions/Catalog.action?viewCategory=&amp;categoryId=FISH</code></li>
+<li>Path correcto: <code>/catalog/categories/FISH</code></li>
+</ul></li>
+<li><strong>HTTP 301 Moved Permanently</strong>: 2 errores (4%)
+<ul>
+<li>Causa: Redirecciones no seguidas automáticamente</li>
+<li>Configuración de JMeter requiere “Follow Redirects” habilitado</li>
+</ul></li>
+<li><strong>Timeout</strong>: 1 error (2%)
+<ul>
+<li>Causa: Tiempo de respuesta &gt; 5000ms</li>
+<li>Servidor no respondió dentro del umbral configurado</li>
+</ul></li>
+</ol>
+<p><strong>Impacto en Producción</strong></p>
+<p>Una tasa de error del 16% significa que <strong>1 de cada 6 usuarios
+experimentaría un fallo</strong>. Esto es completamente inaceptable para
+un sistema en producción. Los Service Level Agreements (SLA) típicos de
+la industria requieren:</p>
+<ul>
+<li>Disponibilidad 99.9% (three nines): Máximo 0.1% de error</li>
+<li>Disponibilidad 99.99% (four nines): Máximo 0.01% de error</li>
+</ul>
+<p>El sistema actual está muy por debajo de estos estándares.</p>
+<h4 id="análisis-de-throughput-y-capacidad">4.2.4 Análisis de Throughput
+y Capacidad</h4>
+<p><strong>Capacidad Actual del Sistema</strong></p>
+<p>Con un throughput de 4.7 req/s (281 req/min), el servidor puede
+manejar:</p>
+<ul>
+<li><strong>50 usuarios concurrentes</strong>: Carga probada (con 16%
+error)</li>
+<li><strong>100 usuarios concurrentes</strong>: Estimado ~21 segundos de
+espera promedio</li>
+<li><strong>1000 usuarios concurrentes</strong>: Estimado ~3.5 minutos
+de espera promedio</li>
+</ul>
+<p><strong>Comparación con Benchmarks de Industria</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tipo de Aplicación</th>
+<th>Throughput Típico</th>
+<th>Evaluación JPetStore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aplicación simple</td>
+<td>50-100 req/s</td>
+<td>Muy por debajo</td>
+</tr>
+<tr>
+<td>Aplicación media</td>
+<td>100-500 req/s</td>
+<td>Significativamente menor</td>
+</tr>
+<tr>
+<td>Aplicación compleja</td>
+<td>10-50 req/s</td>
+<td>Límite inferior (4.7 req/s)</td>
+</tr>
+<tr>
+<td>Alta performance</td>
+<td>500-2000 req/s</td>
+<td>No comparable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusión</strong>: El throughput de JPetStore es bajo
+incluso considerando que es una aplicación de demostración con lógica
+compleja de base de datos.</p>
+<p><strong>Estimación de Capacidad Segura</strong></p>
+<p>Para alcanzar 0% de tasa de error con el rendimiento actual del
+servidor, se estima:</p>
+<ul>
+<li><strong>Carga segura</strong>: ~30 usuarios concurrentes</li>
+<li><strong>Throughput seguro</strong>: ~3 req/s</li>
+<li><strong>Margen de seguridad</strong>: 36% de la carga probada</li>
+</ul>
+<p>Esto indica que el servidor opera cerca de su capacidad máxima con
+solo 50 usuarios.</p>
+<h4 id="impacto-en-experiencia-de-usuario">4.2.5 Impacto en Experiencia
+de Usuario</h4>
+<p><strong>Pregunta de Investigación 1</strong>: Si el tiempo promedio
+de respuesta para 50 usuarios supera los 3 segundos, ¿qué indica esto
+sobre la experiencia del usuario bajo carga?</p>
+<p><strong>Contexto de Nuestros Resultados</strong></p>
+<p>El tiempo promedio medido fue de 2.395 segundos, ligeramente por
+debajo del umbral crítico de 3 segundos, pero peligrosamente cerca.</p>
+<p><strong>Análisis según Estándares de Usabilidad</strong></p>
+<p>Según la investigación de Jakob Nielsen (Nielsen Norman Group) sobre
+tiempos de respuesta en interfaces de usuario:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 37%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr>
+<th>Rango de Tiempo</th>
+<th>Percepción del Usuario</th>
+<th>Comportamiento Esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0-100ms</td>
+<td>Instantáneo</td>
+<td>Sensación de control directo</td>
+</tr>
+<tr>
+<td>100-300ms</td>
+<td>Fluido</td>
+<td>Ligero retraso perceptible pero aceptable</td>
+</tr>
+<tr>
+<td>300-1000ms</td>
+<td>Perceptible</td>
+<td>Usuario nota el retraso pero mantiene flujo de pensamiento</td>
+</tr>
+<tr>
+<td>1-3 segundos</td>
+<td>Retraso notable</td>
+<td>Usuario pierde sensación de operación directa</td>
+</tr>
+<tr>
+<td>3-10 segundos</td>
+<td>Usuario pierde foco</td>
+<td>Alta probabilidad de distracción</td>
+</tr>
+<tr>
+<td>&gt;10 segundos</td>
+<td>Usuario abandona</td>
+<td>Probabilidad muy alta de abandono</td>
+</tr>
+</tbody>
+</table>
+<p><strong>JPetStore se encuentra en el rango de 1-3 segundos</strong>,
+lo que indica:</p>
+<ol type="1">
+<li><strong>Experiencia subóptima</strong>: Los usuarios perciben
+retraso notable en cada interacción.</li>
+<li><strong>Pérdida de flujo</strong>: La experiencia no es fluida,
+interrumpiendo el proceso mental del usuario.</li>
+<li><strong>Riesgo de abandono</strong>: Especialmente si el usuario
+realiza múltiples acciones consecutivas.</li>
+</ol>
+<p><strong>Impacto en Conversión y Abandono</strong></p>
+<p>Investigaciones de Google y Amazon han cuantificado el impacto de
+latencia en métricas de negocio:</p>
+<ul>
+<li><strong>Amazon</strong>: Cada 100ms de latencia adicional resulta en
+1% de pérdida de ventas</li>
+<li><strong>Google</strong>: 500ms de latencia adicional resulta en 20%
+menos de tráfico</li>
+</ul>
+<p>Aplicando estos estándares a nuestros resultados:</p>
+<table>
+<thead>
+<tr>
+<th>Tiempo de Respuesta</th>
+<th>% Abandono Estimado</th>
+<th>Impacto en Conversión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 segundo</td>
+<td>2-3%</td>
+<td>Mínimo</td>
+</tr>
+<tr>
+<td>2-3 segundos</td>
+<td>7-10%</td>
+<td>Moderado</td>
+</tr>
+<tr>
+<td>3-4 segundos</td>
+<td>15-20%</td>
+<td>Significativo</td>
+</tr>
+<tr>
+<td>&gt;4 segundos</td>
+<td>25%+</td>
+<td>Crítico</td>
+</tr>
+</tbody>
+</table>
+<p>Con un promedio de 2.4s y máximo de 6s, <strong>JPetStore está
+perdiendo entre 7-10% de conversiones</strong> en el escenario de 50
+usuarios, y algunos usuarios (aquellos con respuestas de 6s)
+probablemente abandonan el sitio.</p>
+<p><strong>Proyección a Mayor Escala</strong></p>
+<p>Si la carga aumentara proporcionalmente:</p>
+<pre><code>50 usuarios   → 2.4s promedio, 16% error  (Situación actual)
+100 usuarios  → ~4.5s promedio, 30% error (Proyección)
+200 usuarios  → &gt;8s promedio, 50%+ error  (Colapso del sistema)</code></pre>
+<p><strong>Opinión personal</strong>: En mi evaluación, estos resultados
+indican que el sistema no está listo para producción. La proximidad al
+umbral crítico de 3 segundos (solo 605ms de margen) significa que
+cualquier incremento pequeño en la carga resultaría en experiencia
+inaceptable. Además, la tasa de error del 16% es completamente
+inadmisible. Un sistema en producción necesitaría optimizaciones
+sustanciales antes de poder manejar tráfico real.</p>
+<h4
+id="relación-entre-rendimiento-y-confiabilidad-de-pruebas-funcionales">4.2.6
+Relación entre Rendimiento y Confiabilidad de Pruebas Funcionales</h4>
+<p><strong>Pregunta de Investigación 2</strong>: ¿Cómo impacta el mal
+rendimiento (alta latencia) medido por JMeter en la confiabilidad de las
+pruebas funcionales de Playwright o Selenium IDE?</p>
+<p><strong>Mecanismo de Impacto</strong></p>
+<p>Las pruebas de rendimiento y las pruebas funcionales están
+intrínsecamente conectadas. Cuando JMeter detecta alta latencia o
+errores, las pruebas funcionales E2E ejecutándose contra el mismo
+servidor experimentarán los mismos problemas.</p>
+<p><strong>Escenario 1: Timeouts en Pruebas E2E</strong></p>
+<p>Consideremos el test de compra completa (Flujo A) que involucra 8
+interacciones secuenciales:</p>
+<pre><code>Acción 1: Login               → +2.4s (promedio)
+Acción 2: Navegar a Fish       → +2.4s
+Acción 3: Seleccionar producto → +2.4s
+Acción 4: Agregar al carrito   → +2.4s
+Acción 5: Proceder al checkout → +2.4s
+Acción 6: Continuar            → +2.4s
+Acción 7: Confirmar orden      → +2.4s
+Acción 8: Verificar éxito      → +2.4s
+─────────────────────────────────────
+Total:                         = 19.2s</code></pre>
+<p>Con el tiempo promedio de 2.4s, el test completo tomaría 19.2
+segundos, lo cual está dentro del timeout default de Playwright (30s).
+Sin embargo, considerando el peor caso medido por JMeter:</p>
+<pre><code>Con tiempo máximo de 6s por acción:
+8 acciones × 6s = 48 segundos</code></pre>
+<p>Esto <strong>excedería el timeout de 30 segundos</strong>, causando
+que el test falle incorrectamente incluso si la lógica de la aplicación
+es correcta.</p>
+<p><strong>Impacto Diferencial por Framework</strong></p>
+<p><strong>Playwright</strong> (timeout default: 30s por acción, 30s
+para assertions): - Con latencia promedio (2.4s): Tests pasan pero son
+lentos - Con latencia máxima (6s): Alto riesgo de timeout en tests
+complejos - Capacidad de configurar timeouts más largos (workaround, no
+solución)</p>
+<p><strong>Selenium IDE</strong> (timeouts fijos de 5s en
+waitForElement): - Con latencia promedio (2.4s): Tests pasan en la
+mayoría de casos - Con latencia máxima (6s): <strong>100% de tests
+fallan</strong> - No hay flexibilidad para ajustar timeouts
+dinámicamente</p>
+<p><strong>Conclusión</strong>: Selenium IDE es significativamente más
+vulnerable a problemas de rendimiento del servidor.</p>
+<p><strong>Escenario 2: Flakiness Inducido por Latencia
+Variable</strong></p>
+<p>La alta variabilidad en tiempos de respuesta (812ms - 6096ms) causa
+un fenómeno conocido como “flaky tests”:</p>
+<pre><code>Ejecución 1: Servidor responde en 1.2s  → Test PASA
+Ejecución 2: Servidor responde en 5.8s  → Test FALLA (timeout)
+Ejecución 3: Servidor responde en 2.1s  → Test PASA</code></pre>
+<p>Este comportamiento no determinístico es extremadamente problemático
+porque:</p>
+<ol type="1">
+<li><strong>Reduce confianza en la suite de tests</strong>:
+Desarrolladores aprenden a ignorar fallos intermitentes.</li>
+<li><strong>Dificulta identificar bugs reales</strong>: Fallos legítimos
+quedan ocultos entre falsos positivos.</li>
+<li><strong>Ralentiza pipeline CI/CD</strong>: Tests deben re-ejecutarse
+múltiples veces para confirmar resultados.</li>
+</ol>
+<p><strong>Escenario 3: Impacto en Pipeline CI/CD</strong></p>
+<p>En un pipeline de integración continua típico:</p>
+<pre><code>1. Developer hace commit
+2. Pipeline CI ejecuta tests E2E
+3. Servidor CI/CD está bajo carga (múltiples builds concurrentes)
+4. Latencia aumenta a 4-5s promedio
+5. 50% de tests E2E fallan por timeout
+6. Build marcado como fallido
+7. Developer debe investigar si es fallo real o flakiness</code></pre>
+<p>Este ciclo desperdicia tiempo significativo del equipo y reduce la
+efectividad de la automatización.</p>
+<p><strong>Soluciones y Mitigaciones</strong></p>
+<p><strong>Solución 1: Aumentar Timeouts (Inadecuada)</strong></p>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Playwright - Aumentar timeout globalmente</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>test<span class="op">.</span><span class="fu">setTimeout</span>(<span class="dv">60000</span>)<span class="op">;</span> <span class="co">// 60s en vez de 30s</span></span></code></pre></div>
+<p><strong>Problema</strong>: Esta solución enmascara el problema real
+sin solucionarlo. Tests lentos impactan productividad y no resuelven la
+experiencia del usuario final.</p>
+<p><strong>Solución 2: Optimizar Rendimiento del Servidor
+(Correcta)</strong></p>
+<p>Abordar las causas raíz identificadas: - Reducir latencia promedio de
+2.4s a &lt;500ms - Eliminar tasa de error del 16% a 0% - Aumentar
+throughput de 4.7 a 20+ req/s</p>
+<p><strong>Solución 3: Tests de Rendimiento Preventivos en CI/CD (Best
+Practice)</strong></p>
+<p>Implementar un gate de calidad:</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Paso 1 del pipeline: Ejecutar prueba de rendimiento</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ex">jmeter</span> <span class="at">-n</span> <span class="at">-t</span> performance-test.jmx <span class="at">-l</span> results.jtl</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Paso 2: Validar métricas</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="ex">average_response_time</span> <span class="op">&gt;</span> 1000ms OR error_rate <span class="op">&gt;</span> 0%:</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="ex">FAIL</span> pipeline</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    <span class="ex">EXIT</span> <span class="st">&quot;Performance degradation detected&quot;</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Paso 3: Solo si pasa, ejecutar tests E2E</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> playwright test</span></code></pre></div>
+<p>Este enfoque previene que tests E2E fallen debido a problemas de
+servidor, identificando la causa raíz tempranamente.</p>
+<p><strong>Matriz de Impacto según Latencia</strong></p>
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 33%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>Latencia del Servidor</th>
+<th>Impacto en Tests E2E</th>
+<th>Acción Recomendada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;500ms</td>
+<td>Sin impacto significativo</td>
+<td>Óptimo, no requiere acción</td>
+</tr>
+<tr>
+<td>500ms-1s</td>
+<td>Impacto mínimo, tests más lentos</td>
+<td>Aceptable, monitorear tendencia</td>
+</tr>
+<tr>
+<td>1s-2s</td>
+<td>Tests notablemente más lentos</td>
+<td>Investigar causas de latencia</td>
+</tr>
+<tr>
+<td>2s-3s</td>
+<td>Tests cerca de timeout, riesgo de flakiness</td>
+<td><strong>Optimización requerida</strong></td>
+</tr>
+<tr>
+<td>3s-5s</td>
+<td>Tests flaky, fallos intermitentes</td>
+<td><strong>Urgente: Optimización crítica</strong></td>
+</tr>
+<tr>
+<td>&gt;5s</td>
+<td>Tests fallan sistemáticamente</td>
+<td><strong>Crítico: Servidor no usable</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Posición de JPetStore</strong>: 2.4s promedio, 6s máximo →
+Entre “Optimización requerida” y “Urgente”</p>
+<p><strong>Opinión personal</strong>: Este análisis revela uno de los
+hallazgos más importantes del proyecto: las pruebas funcionales y de
+rendimiento no son independientes, sino complementarias. En mi
+experiencia, los problemas de rendimiento que detecté con JMeter se
+manifestaron directamente como lentitud en la ejecución de los tests de
+Playwright. Aunque Playwright manejó mejor estos problemas gracias a su
+sistema de auto-wait, la realidad es que ningún framework de testing
+puede compensar un servidor con rendimiento deficiente. Esta
+interrelación refuerza la necesidad de incluir pruebas de rendimiento
+como parte integral del proceso de QA, no como una actividad
+separada.</p>
+<h4 id="recomendaciones-de-optimización">4.2.7 Recomendaciones de
+Optimización</h4>
+<p>Basándose en los hallazgos del análisis de rendimiento, se proponen
+las siguientes recomendaciones categorizadas por prioridad y horizonte
+temporal:</p>
+<p><strong>Recomendaciones Inmediatas (Semana 1)</strong></p>
+<ol type="1">
+<li><strong>Corregir errores de configuración HTTP</strong>
+<ul>
+<li>Resolver redirecciones 301/404</li>
+<li>Validar URLs correctas en todas las rutas</li>
+<li>Impacto esperado: Reducir tasa de error de 16% a &lt;5%</li>
+</ul></li>
+<li><strong>Implementar cache básico</strong>
+<ul>
+<li>Cache de resultados de queries de base de datos frecuentes</li>
+<li>Cache HTTP para assets estáticos</li>
+<li>Impacto esperado: Reducir latencia en 20-30%</li>
+</ul></li>
+<li><strong>Optimizar queries SQL más lentas</strong>
+<ul>
+<li>Identificar queries sin índices</li>
+<li>Agregar índices apropiados</li>
+<li>Impacto esperado: Reducir tiempo de respuesta en 15-25%</li>
+</ul></li>
+</ol>
+<p><strong>Recomendaciones de Corto Plazo (Mes 1)</strong></p>
+<ol type="1">
+<li><strong>Implementar CDN para assets estáticos</strong>
+<ul>
+<li>Distribuir imágenes, CSS, JavaScript</li>
+<li>Reducir carga en servidor principal</li>
+<li>Impacto esperado: Reducir tiempo de carga inicial en 40%</li>
+</ul></li>
+<li><strong>Habilitar compresión gzip/brotli</strong>
+<ul>
+<li>Reducir tamaño de respuestas HTML</li>
+<li>Impacto esperado: Reducir transferencia de datos en 60-70%</li>
+</ul></li>
+<li><strong>Implementar cache distribuido (Redis)</strong>
+<ul>
+<li>Cache de sesiones de usuario</li>
+<li>Cache de datos de catálogo</li>
+<li>Impacto esperado: Reducir latencia en 30-40%</li>
+</ul></li>
+</ol>
+<p><strong>Recomendaciones de Mediano Plazo (Trimestre 1)</strong></p>
+<ol type="1">
+<li><strong>Load balancing horizontal</strong>
+<ul>
+<li>Distribuir carga entre múltiples instancias</li>
+<li>Aumentar capacidad total del sistema</li>
+<li>Impacto esperado: Throughput 3-5x actual</li>
+</ul></li>
+<li><strong>Optimización de arquitectura de base de datos</strong>
+<ul>
+<li>Implementar connection pooling optimizado</li>
+<li>Considerar read replicas para queries de lectura</li>
+<li>Impacto esperado: Reducir latencia en 40-50%</li>
+</ul></li>
+<li><strong>Auto-scaling basado en métricas</strong>
+<ul>
+<li>Aumentar instancias automáticamente bajo carga</li>
+<li>Impacto esperado: Manejar picos de tráfico sin degradación</li>
+</ul></li>
+</ol>
+<p><strong>Impacto Proyectado de Optimizaciones</strong></p>
+<pre><code>Estado Actual:
+├─ Tiempo de Respuesta Promedio: 2.4s
+├─ Tasa de Error: 16%
+└─ Throughput: 4.7 req/s
+
+Estado Post-Optimización (Estimado):
+├─ Tiempo de Respuesta Promedio: &lt;500ms (5x mejora)
+├─ Tasa de Error: 0% (eliminación total)
+└─ Throughput: 50+ req/s (10x mejora)</code></pre>
+<h4 id="comparación-con-alternativas-modernas-k6">4.2.8 Comparación con
+Alternativas Modernas: K6</h4>
+<p>Como análisis complementario, se implementó una prueba equivalente
+utilizando Grafana K6, una herramienta moderna de testing de
+rendimiento. Los resultados proporcionan un punto de comparación
+interesante.</p>
+<p><strong>Configuración Equivalente en K6</strong></p>
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">const</span> options <span class="op">=</span> {</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">stages</span><span class="op">:</span> [</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">duration</span><span class="op">:</span> <span class="st">&#39;10s&#39;</span><span class="op">,</span> <span class="dt">target</span><span class="op">:</span> <span class="dv">50</span> }<span class="op">,</span> <span class="co">// Ramp-up de 50 usuarios en 10s</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">duration</span><span class="op">:</span> <span class="st">&#39;1s&#39;</span><span class="op">,</span> <span class="dt">target</span><span class="op">:</span> <span class="dv">50</span> }<span class="op">,</span>  <span class="co">// Mantener 50 usuarios por 1s</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    { <span class="dt">duration</span><span class="op">:</span> <span class="st">&#39;5s&#39;</span><span class="op">,</span> <span class="dt">target</span><span class="op">:</span> <span class="dv">0</span> }<span class="op">,</span>   <span class="co">// Ramp-down</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">thresholds</span><span class="op">:</span> {</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;http_req_duration&#39;</span><span class="op">:</span> [<span class="st">&#39;p(95)&lt;5000&#39;</span>]<span class="op">,</span> <span class="co">// 95% bajo 5s</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;http_req_failed&#39;</span><span class="op">:</span> [<span class="st">&#39;rate&lt;0.01&#39;</span>]<span class="op">,</span>    <span class="co">// &lt;1% error</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code></pre></div>
+<p><strong>Resultados Comparativos</strong></p>
+<table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>JMeter</th>
+<th>K6</th>
+<th>Diferencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Muestras Totales</td>
+<td>50</td>
+<td>734</td>
+<td>K6: 14.7x más requests</td>
+</tr>
+<tr>
+<td>Tiempo Promedio</td>
+<td>2395ms</td>
+<td>330.6ms</td>
+<td>K6: 7.2x más rápido</td>
+</tr>
+<tr>
+<td>Throughput</td>
+<td>4.7 req/s</td>
+<td>43.72 req/s</td>
+<td>K6: 9.3x mayor</td>
+</tr>
+<tr>
+<td>Tasa de Error</td>
+<td>16%</td>
+<td>0%</td>
+<td>K6: Sin errores</td>
+</tr>
+<tr>
+<td>Duración Total</td>
+<td>~11s</td>
+<td>16s</td>
+<td>Similar (K6 incluye ramp-down)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Análisis de Discrepancias</strong></p>
+<p>La diferencia dramática en resultados requiere explicación:</p>
+<ol type="1">
+<li><p><strong>Número de requests</strong>: K6 ejecutó 734 requests vs
+50 de JMeter porque K6 continuó ejecutando requests durante el periodo
+de hold (1s) y ramp-down (5s).</p></li>
+<li><p><strong>Tiempo de respuesta</strong>: K6 midió 330ms promedio vs
+2395ms de JMeter. Posibles causas:</p>
+<ul>
+<li>K6 es más eficiente en manejo de conexiones HTTP</li>
+<li>Carga del servidor era menor durante ejecución de K6</li>
+<li>K6 reutiliza conexiones HTTP (keep-alive) más efectivamente</li>
+</ul></li>
+<li><p><strong>Tasa de error</strong>: K6 logró 0% vs 16% de JMeter
+porque:</p>
+<ul>
+<li>Configuración de K6 sigue redirecciones automáticamente</li>
+<li>URL configurada correctamente desde el inicio</li>
+<li>Mejor manejo de timeouts y retries</li>
+</ul></li>
+</ol>
+<p><strong>Ventajas Técnicas de K6 sobre JMeter</strong></p>
+<p><strong>1. Código como Configuración</strong></p>
+<p>JMeter (XML, 150+ líneas):</p>
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode xml"><code class="sourceCode xml"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">ThreadGroup</span> <span class="ot">guiclass=</span><span class="st">&quot;ThreadGroupGui&quot;</span> <span class="ot">testclass=</span><span class="st">&quot;ThreadGroup&quot;</span>&gt;</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">stringProp</span> <span class="ot">name=</span><span class="st">&quot;ThreadGroup.num_threads&quot;</span>&gt;50&lt;/<span class="kw">stringProp</span>&gt;</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">stringProp</span> <span class="ot">name=</span><span class="st">&quot;ThreadGroup.ramp_time&quot;</span>&gt;10&lt;/<span class="kw">stringProp</span>&gt;</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  ...</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">ThreadGroup</span>&gt;</span></code></pre></div>
+<p>K6 (JavaScript, 23 líneas):</p>
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">const</span> options <span class="op">=</span> {</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">stages</span><span class="op">:</span> [{ <span class="dt">duration</span><span class="op">:</span> <span class="st">&#39;10s&#39;</span><span class="op">,</span> <span class="dt">target</span><span class="op">:</span> <span class="dv">50</span> }]<span class="op">,</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span></code></pre></div>
+<p><strong>2. Integración CI/CD</strong></p>
+<p>JMeter requiere:</p>
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">java</span> <span class="at">-jar</span> apache-jmeter.jar <span class="at">-n</span> <span class="at">-t</span> test.jmx <span class="at">-l</span> results.jtl <span class="at">-e</span> <span class="at">-o</span> report/</span></code></pre></div>
+<p>K6 es más simple:</p>
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">k6</span> run script.js</span></code></pre></div>
+<p><strong>3. Métricas en Tiempo Real</strong></p>
+<p>K6 proporciona output progresivo durante la ejecución, mientras
+JMeter requiere esperar hasta el final para ver resultados
+completos.</p>
+<p><strong>Opinión personal</strong>: Aunque JMeter cumplió con los
+requisitos académicos del proyecto y proporcionó reportes HTML visuales
+atractivos, mi experiencia con K6 reveló que las herramientas modernas
+ofrecen ventajas significativas. K6 es más rápido de configurar (23
+líneas de código vs 150+ líneas de XML), más fácil de versionar en Git
+(código limpio vs XML generado), y produce resultados más precisos. Para
+proyectos futuros, consideraría seriamente adoptar K6 u otras
+alternativas modernas en lugar de JMeter, especialmente en contextos
+DevOps donde la integración con pipelines CI/CD es crítica.</p>
+<hr />
+<h2 id="conclusiones">5. Conclusiones</h2>
+<h3 id="hallazgos-principales">5.1 Hallazgos Principales</h3>
+<p>Este estudio comparativo ha revelado diferencias significativas entre
+frameworks de automatización de pruebas y ha identificado limitaciones
+críticas en el rendimiento del sistema bajo evaluación.</p>
+<p><strong>Sobre Automatización Funcional:</strong></p>
+<ol type="1">
+<li><p><strong>Playwright demuestra superioridad técnica</strong> en
+todos los aspectos evaluados: estabilidad (0% flakiness vs 80% en
+Selenium IDE), mantenibilidad (código limpio y versionable), y
+capacidades de debugging (Trace Viewer vs logs básicos).</p></li>
+<li><p><strong>Selenium IDE tiene un nicho específico</strong> limitado
+a prototipos rápidos y equipos sin capacidades de programación, pero no
+escala a proyectos profesionales a largo plazo.</p></li>
+<li><p><strong>Las capacidades visuales de Playwright</strong>
+(screenshots automáticos y grabación de video) proporcionan valor
+agregado significativo para documentación y análisis de fallos.</p></li>
+<li><p><strong>La inversión en aprendizaje de Playwright</strong> se
+recupera rápidamente en productividad y calidad, típicamente en 2-3
+semanas de uso continuo.</p></li>
+</ol>
+<p><strong>Sobre Rendimiento del Sistema:</strong></p>
+<ol type="1">
+<li><p><strong>JPetStore opera cerca de su capacidad máxima</strong> con
+solo 50 usuarios concurrentes (2.4s promedio, 6s máximo, 16%
+error).</p></li>
+<li><p><strong>El rendimiento actual impacta negativamente las pruebas
+funcionales</strong>, causando lentitud en ejecución y riesgo de fallos
+por timeout, especialmente en Selenium IDE.</p></li>
+<li><p><strong>La tasa de error del 16% es completamente
+inadmisible</strong> para un sistema en producción, requiriendo
+optimización urgente.</p></li>
+<li><p><strong>Las pruebas de rendimiento y funcionales son
+complementarias</strong>, no independientes. La alta latencia del
+servidor se manifiesta directamente como problemas en tests
+E2E.</p></li>
+</ol>
+<h3 id="recomendaciones-finales">5.2 Recomendaciones Finales</h3>
+<p><strong>Para Selección de Herramientas de
+Automatización:</strong></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 37%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr>
+<th>Contexto</th>
+<th>Recomendación</th>
+<th>Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Proyecto académico/aprendizaje</td>
+<td>Playwright</td>
+<td>Desarrolla habilidades técnicas valiosas</td>
+</tr>
+<tr>
+<td>Prototipo rápido (&lt;1 semana)</td>
+<td>Selenium IDE</td>
+<td>Velocidad inicial</td>
+</tr>
+<tr>
+<td>Proyecto profesional</td>
+<td>Playwright</td>
+<td>Estabilidad, mantenibilidad, escalabilidad</td>
+</tr>
+<tr>
+<td>Equipo sin programadores</td>
+<td>Selenium IDE</td>
+<td>Barrera de entrada baja</td>
+</tr>
+<tr>
+<td>Pipeline CI/CD</td>
+<td>Playwright</td>
+<td>Integración nativa</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Para Optimización de Rendimiento:</strong></p>
+<ol type="1">
+<li><strong>Prioridad Crítica</strong>: Resolver errores HTTP (404/301)
+y reducir tasa de error a 0%</li>
+<li><strong>Prioridad Alta</strong>: Implementar cache y optimizar
+queries para reducir latencia a &lt;1s</li>
+<li><strong>Prioridad Media</strong>: Considerar CDN y load balancing
+para escalabilidad</li>
+</ol>
+<p><strong>Para Integración de Testing:</strong></p>
+<p>Implementar pruebas de rendimiento como gate de calidad en CI/CD,
+ejecutándose antes de tests E2E para detectar degradación
+tempranamente.</p>
+<h3 id="contribución-académica">5.3 Contribución Académica</h3>
+<p>Este proyecto ha proporcionado experiencia práctica invaluable
+en:</p>
+<ol type="1">
+<li><p><strong>Evaluación comparativa de tecnologías</strong>:
+Metodología para comparar frameworks basándose en métricas objetivas y
+experiencia práctica.</p></li>
+<li><p><strong>Análisis de interdependencias</strong>: Comprensión de
+cómo el rendimiento del sistema impacta la confiabilidad de las pruebas
+automatizadas.</p></li>
+<li><p><strong>Pensamiento crítico sobre herramientas</strong>: No todas
+las herramientas populares son apropiadas para todos los contextos; la
+selección debe basarse en requisitos específicos del proyecto.</p></li>
+<li><p><strong>Documentación técnica</strong>: Desarrollo de habilidades
+para documentar hallazgos técnicos de manera clara y
+fundamentada.</p></li>
+</ol>
+<h3 id="limitaciones-del-estudio">5.4 Limitaciones del Estudio</h3>
+<p>Este estudio presenta las siguientes limitaciones que deben
+considerarse al interpretar los resultados:</p>
+<ol type="1">
+<li><p><strong>Escala limitada</strong>: Las pruebas se realizaron con
+50 usuarios concurrentes; resultados podrían diferir significativamente
+con 500 o 5000 usuarios.</p></li>
+<li><p><strong>Entorno controlado</strong>: Las pruebas se ejecutaron en
+entorno de laboratorio sin variaciones de red, geolocalización o
+dispositivos reales.</p></li>
+<li><p><strong>Aplicación de demostración</strong>: JPetStore es una
+aplicación de prueba que puede no reflejar la complejidad de sistemas
+empresariales reales.</p></li>
+<li><p><strong>Experiencia del evaluador</strong>: Como estudiante, mi
+experiencia puede haber influido en la velocidad de implementación y
+resolución de problemas.</p></li>
+</ol>
+<h3 id="trabajos-futuros">5.5 Trabajos Futuros</h3>
+<p>Áreas potenciales de investigación futura:</p>
+<ol type="1">
+<li><p><strong>Evaluación de otros frameworks</strong>: Comparar
+Playwright con Cypress, TestCafe, o herramientas emergentes.</p></li>
+<li><p><strong>Testing móvil</strong>: Extender el análisis a pruebas en
+dispositivos móviles utilizando Appium o frameworks nativos.</p></li>
+<li><p><strong>Pruebas de seguridad</strong>: Integrar análisis de
+vulnerabilidades (OWASP) en el proceso de automatización.</p></li>
+<li><p><strong>Machine Learning en testing</strong>: Investigar
+aplicación de ML para detección de patrones de fallos o generación
+automática de tests.</p></li>
+</ol>
+<hr />
+<h2 id="referencias-bibliográficas">6. Referencias Bibliográficas</h2>
+<ol type="1">
+<li><p>Nielsen, J. (1993). <em>Usability Engineering</em>. Morgan
+Kaufmann Publishers. (Fundamento de análisis de tiempos de
+respuesta)</p></li>
+<li><p>Microsoft. (2024). <em>Playwright Documentation</em>.
+https://playwright.dev/docs/intro (Documentación oficial de
+Playwright)</p></li>
+<li><p>Selenium Project. (2024). <em>Selenium IDE Documentation</em>.
+https://www.selenium.dev/selenium-ide/ (Documentación oficial de
+Selenium IDE)</p></li>
+<li><p>Apache Software Foundation. (2024). <em>Apache JMeter User
+Manual</em>. https://jmeter.apache.org/usermanual/index.html
+(Documentación oficial de JMeter)</p></li>
+<li><p>Google Developers. (2023). <em>Core Web Vitals</em>.
+https://web.dev/vitals/ (Estándares de rendimiento web)</p></li>
+<li><p>Grafana Labs. (2024). <em>K6 Documentation</em>.
+https://k6.io/docs/ (Documentación oficial de K6)</p></li>
+<li><p>Fowler, M. (2018). <em>Patterns for Managing Source Code
+Branches</em>. Martin Fowler Blog. (Principios de CI/CD)</p></li>
+<li><p>Amazon Web Services. (2023). <em>Performance Testing Best
+Practices</em>. AWS Documentation. (Benchmarks de rendimiento de
+industria)</p></li>
+</ol>
+<hr />
+<h2 id="anexos">Anexos</h2>
+<h3 id="anexo-a-estructura-de-archivos-del-proyecto">Anexo A: Estructura
+de Archivos del Proyecto</h3>
+<pre><code>/pruebas
+├── playwright/
+│   ├── tests/
+│   │   ├── compra-simple.spec.ts      (Flujo A: Compra Completa)
+│   │   ├── perfil-simple.spec.ts      (Flujo B: Gestión de Cuenta)
+│   │   └── visual.spec.ts             (Pruebas de regresión visual)
+│   ├── playwright.config.ts           (Configuración de Playwright)
+│   ├── package.json
+│   └── screenshots/                   (Capturas automáticas)
+├── JPetStore-Automatizacion-Final.side (Tests de Selenium IDE)
+├── jmeter/
+│   ├── JPetStore-Performance-Test.jmx (Configuración de JMeter)
+│   ├── results.jtl                    (Resultados de ejecución)
+│   ├── report/                        (Dashboard HTML)
+│   └── screenshots/                   (Evidencia visual)
+├── k6/
+│   ├── jpetstore-performance-test.js  (Script de K6)
+│   ├── results.json                   (Métricas detalladas)
+│   └── output.txt                     (Output de consola)
+└── INFORME-ACADEMICO-ANALISIS-COMPARATIVO.md (Este documento)</code></pre>
+<h3 id="anexo-b-comandos-de-ejecución">Anexo B: Comandos de
+Ejecución</h3>
+<p><strong>Playwright:</strong></p>
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instalar dependencias</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> install</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejecutar todos los tests</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> playwright test</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejecutar test específico</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> playwright test tests/compra-simple.spec.ts</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Ver reporte con Trace Viewer</span></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> playwright show-report</span></code></pre></div>
+<p><strong>Selenium IDE:</strong></p>
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instalar Side Runner</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> install <span class="at">-g</span> selenium-side-runner</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejecutar archivo .side</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="ex">selenium-side-runner</span> JPetStore-Automatizacion-Final.side</span></code></pre></div>
+<p><strong>JMeter:</strong></p>
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejecutar en modo GUI (para desarrollo)</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="ex">jmeter</span> <span class="at">-t</span> jmeter/JPetStore-Performance-Test.jmx</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejecutar en modo CLI (para producción)</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="ex">jmeter</span> <span class="at">-n</span> <span class="at">-t</span> jmeter/JPetStore-Performance-Test.jmx <span class="dt">\</span></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">-l</span> jmeter/results.jtl <span class="dt">\</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">-e</span> <span class="at">-o</span> jmeter/report/</span></code></pre></div>
+<p><strong>K6:</strong></p>
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejecutar test</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="ex">k6</span> run k6/jpetstore-performance-test.js</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ejecutar con output JSON</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="ex">k6</span> run k6/jpetstore-performance-test.js <span class="at">--out</span> json=k6/results.json</span></code></pre></div>
+<h3 id="anexo-c-capturas-de-pantalla">Anexo C: Capturas de Pantalla</h3>
+<p>Las siguientes capturas de pantalla documentan visualmente los
+resultados obtenidos:</p>
+<ol type="1">
+<li><strong>Playwright - Reporte HTML</strong>:
+playwright-report/index.html</li>
+<li><strong>Playwright - Screenshots</strong>: playwright/screenshots/
+(7 capturas por flujo)</li>
+<li><strong>Playwright - Videos</strong>: playwright/videos/
+(grabaciones completas de ejecución)</li>
+<li><strong>JMeter - Aggregate Report</strong>:
+jmeter/jmeter-statistics-screenshot.png</li>
+<li><strong>JMeter - Dashboard HTML</strong>:
+jmeter/jmeter-dashboard-screenshot.png</li>
+<li><strong>K6 - Resultados de Consola</strong>:
+k6/k6-results-screenshot.png</li>
+</ol>
+<h3 id="anexo-d-configuración-de-captura-visual-en-playwright">Anexo D:
+Configuración de Captura Visual en Playwright</h3>
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">// playwright.config.ts</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="fu">defineConfig</span>({</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  use<span class="op">:</span> {</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Captura screenshot en cada fallo</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>    screenshot<span class="op">:</span> <span class="st">&#39;only-on-failure&#39;</span><span class="op">,</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Graba video de todas las ejecuciones</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>    video<span class="op">:</span> <span class="st">&#39;on&#39;</span><span class="op">,</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Configuración de trace para debugging</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>    trace<span class="op">:</span> <span class="st">&#39;on-first-retry&#39;</span><span class="op">,</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Configuración de reporte HTML</span></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>  reporter<span class="op">:</span> [</span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&#39;html&#39;</span><span class="op">,</span> { open<span class="op">:</span> <span class="st">&#39;never&#39;</span> }]<span class="op">,</span></span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>    [<span class="st">&#39;list&#39;</span>]</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>  ]<span class="op">,</span></span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code></pre></div>
+<p>Esta configuración garantiza que: - Cada fallo genera screenshot
+automático - Todas las ejecuciones se graban en video - El trace viewer
+se activa en retry de tests fallidos - Se genera reporte HTML navegable
+con toda la evidencia visual</p>
+<hr />
+<p><strong>Declaración de Autoría</strong>: Este informe fue
+desarrollado como parte del proyecto académico del curso de
+Automatización de Pruebas de Software. Todas las implementaciones,
+análisis y conclusiones reflejan trabajo original basado en
+investigación práctica y fundamentos teóricos establecidos.</p>
+<p><strong>Fecha de Finalización</strong>: 1 de Noviembre de 2025<br />
+<strong>Firma</strong>: Cindy García</p>
+</body>
+</html>
