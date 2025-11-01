@@ -1,0 +1,228 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "Aspectran" [ref=e6] [cursor=pointer]:
+        - /url: https://public.aspectran.com/
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - button "Sample Apps" [ref=e10] [cursor=pointer]
+        - listitem [ref=e11]:
+          - generic [ref=e12]: Get Involved
+      - generic [ref=e13]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link "Monitoring" [ref=e16] [cursor=pointer]:
+              - /url: https://public.aspectran.com/monitoring/#jpetstore
+        - search [ref=e18]:
+          - generic [ref=e19]:
+            - textbox "Search" [ref=e20]
+            - button "" [ref=e21] [cursor=pointer]:
+              - generic [ref=e22]: 
+        - generic [ref=e24]:
+          - button "Toggle theme" [ref=e25] [cursor=pointer]:
+            - generic [ref=e26]: 
+          - text:      
+  - generic [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - paragraph [ref=e31]: A full-stack sample web application built on top of Aspectran and MyBatis
+        - heading "JPetStore Demo" [level=1] [ref=e32]
+        - paragraph [ref=e33]: The goal of the JPetStore Demo App is to provide and demonstrate a sample web application that leverages Aspectran and MyBatis.
+      - navigation "You are here:" [ref=e40]:
+        - list [ref=e41]:
+          - listitem [ref=e42]:
+            - link "Sample Apps" [ref=e43] [cursor=pointer]:
+              - /url: https://public.aspectran.com/
+          - listitem [ref=e44]:
+            - text: /
+            - link "JPetStore Demo" [ref=e45] [cursor=pointer]:
+              - /url: /
+    - generic [ref=e46]:
+      - generic [ref=e48]:
+        - link "JPetStore" [ref=e49] [cursor=pointer]:
+          - /url: /
+          - img "JPetStore" [ref=e50]
+        - list [ref=e52]:
+          - listitem [ref=e53]:
+            - link "Fish" [ref=e54] [cursor=pointer]:
+              - /url: /categories/FISH
+          - listitem [ref=e55]:
+            - link "Dogs" [ref=e56] [cursor=pointer]:
+              - /url: /categories/DOGS
+          - listitem [ref=e57]:
+            - link "Reptiles" [ref=e58] [cursor=pointer]:
+              - /url: /categories/REPTILES
+          - listitem [ref=e59]:
+            - link "Cats" [ref=e60] [cursor=pointer]:
+              - /url: /categories/CATS
+          - listitem [ref=e61]:
+            - link "Birds" [ref=e62] [cursor=pointer]:
+              - /url: /categories/BIRDS
+          - listitem [ref=e63]:
+            - link "AppMon" [ref=e64] [cursor=pointer]:
+              - /url: https://public.aspectran.com/monitoring/#jpetstore
+          - listitem [ref=e65]:
+            - link "?" [ref=e66] [cursor=pointer]:
+              - /url: /help.html
+        - generic [ref=e67]:
+          - link " 0" [ref=e68] [cursor=pointer]:
+            - /url: /cart/viewCart
+            - generic [ref=e69]: 
+            - text: "0"
+          - link "My Orders" [ref=e70] [cursor=pointer]:
+            - /url: /order/listOrders
+          - generic "My Account" [ref=e72] [cursor=pointer]:
+            - generic [ref=e73]: 
+        - search [ref=e74]:
+          - generic [ref=e75]:
+            - searchbox "Search" [ref=e76]
+            - button "" [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]: 
+      - generic [ref=e81]:
+        - paragraph [ref=e83]: Thank you, your order has been submitted.
+        - generic [ref=e84]:
+          - heading "Order" [level=3] [ref=e85]
+          - link "Return to Main Menu" [ref=e86] [cursor=pointer]:
+            - /url: /
+        - table [ref=e87]:
+          - rowgroup [ref=e91]:
+            - 'row "Order No. #43142" [ref=e92]':
+              - cell "Order No." [ref=e93]
+              - cell "#43142" [ref=e94]
+            - row "Order Date 2025/11/01 06:07:29" [ref=e95]:
+              - cell "Order Date" [ref=e96]
+              - cell "2025/11/01 06:07:29" [ref=e97]
+        - heading "Payment Details" [level=3] [ref=e98]
+        - table [ref=e99]:
+          - rowgroup [ref=e103]:
+            - 'row "Card Type: Visa" [ref=e104]':
+              - cell "Card Type:" [ref=e105]
+              - cell "Visa" [ref=e106]
+            - 'row "Card Number: 999999999999999 * Fake number!" [ref=e107]':
+              - cell "Card Number:" [ref=e108]
+              - cell "999999999999999 * Fake number!" [ref=e109]
+            - 'row "Expiry Date (MM/YYYY): 12/2019" [ref=e110]':
+              - cell "Expiry Date (MM/YYYY):" [ref=e111]
+              - cell "12/2019" [ref=e112]
+        - heading "Billing Address" [level=3] [ref=e113]
+        - table [ref=e114]:
+          - rowgroup [ref=e118]:
+            - 'row "First name: Juan_1762016316105" [ref=e119]':
+              - cell "First name:" [ref=e120]
+              - cell "Juan_1762016316105" [ref=e121]
+            - 'row "Last name: Pérez_1762016316156" [ref=e122]':
+              - cell "Last name:" [ref=e123]
+              - cell "Pérez_1762016316156" [ref=e124]
+            - 'row "Address 1: Nguyen Hue 1" [ref=e125]':
+              - cell "Address 1:" [ref=e126]
+              - cell "Nguyen Hue 1" [ref=e127]
+            - 'row "Address 2: 1234" [ref=e128]':
+              - cell "Address 2:" [ref=e129]
+              - cell "1234" [ref=e130]
+            - 'row "City: דגד" [ref=e131]':
+              - cell "City:" [ref=e132]
+              - cell "דגד" [ref=e133]
+            - 'row "State: @@hrZex" [ref=e134]':
+              - cell "State:" [ref=e135]
+              - cell "@@hrZex" [ref=e136]
+            - 'row "Zip: 47930" [ref=e137]':
+              - cell "Zip:" [ref=e138]
+              - cell "47930" [ref=e139]
+            - 'row "Country: USA" [ref=e140]':
+              - cell "Country:" [ref=e141]
+              - cell "USA" [ref=e142]
+        - heading "Shipping Address" [level=3] [ref=e143]
+        - table [ref=e144]:
+          - rowgroup [ref=e148]:
+            - 'row "First name: Juan_1762016316105" [ref=e149]':
+              - cell "First name:" [ref=e150]
+              - cell "Juan_1762016316105" [ref=e151]
+            - 'row "Last name: Pérez_1762016316156" [ref=e152]':
+              - cell "Last name:" [ref=e153]
+              - cell "Pérez_1762016316156" [ref=e154]
+            - 'row "Address 1: Nguyen Hue 1" [ref=e155]':
+              - cell "Address 1:" [ref=e156]
+              - cell "Nguyen Hue 1" [ref=e157]
+            - 'row "Address 2: 1234" [ref=e158]':
+              - cell "Address 2:" [ref=e159]
+              - cell "1234" [ref=e160]
+            - 'row "City: דגד" [ref=e161]':
+              - cell "City:" [ref=e162]
+              - cell "דגד" [ref=e163]
+            - 'row "State: @@hrZex" [ref=e164]':
+              - cell "State:" [ref=e165]
+              - cell "@@hrZex" [ref=e166]
+            - 'row "Zip: 47930" [ref=e167]':
+              - cell "Zip:" [ref=e168]
+              - cell "47930" [ref=e169]
+            - 'row "Country: USA" [ref=e170]':
+              - cell "Country:" [ref=e171]
+              - cell "USA" [ref=e172]
+            - 'row "Courier: UPS" [ref=e173]':
+              - cell "Courier:" [ref=e174]
+              - cell "UPS" [ref=e175]
+            - 'row "Status: P" [ref=e176]':
+              - cell "Status:" [ref=e177]
+              - cell "P" [ref=e178]
+        - table [ref=e179]:
+          - rowgroup [ref=e180]:
+            - row "Item ID Description Quantity Price Total Cost" [ref=e181]:
+              - cell "Item ID" [ref=e182]
+              - cell "Description" [ref=e183]
+              - cell "Quantity" [ref=e184]
+              - cell "Price" [ref=e185]
+              - cell "Total Cost" [ref=e186]
+          - rowgroup [ref=e187]:
+            - row "EST-1 Large Angelfish 1 $16.50 $16.50" [ref=e188]:
+              - cell "EST-1" [ref=e189]:
+                - link "EST-1" [ref=e190] [cursor=pointer]:
+                  - /url: /products/FI-SW-01/items/EST-1
+              - cell "Large Angelfish" [ref=e191]
+              - cell "1" [ref=e192]
+              - cell "$16.50" [ref=e193]
+              - cell "$16.50" [ref=e194]
+          - rowgroup [ref=e195]:
+            - row "Total $16.50" [ref=e196]:
+              - cell [ref=e197]
+              - cell "Total" [ref=e198]
+              - cell "$16.50" [ref=e199]
+        - button "Delete Order" [ref=e201] [cursor=pointer]
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - paragraph [ref=e205]:
+            - link "aspectran.com" [ref=e206] [cursor=pointer]:
+              - /url: https://aspectran.com/
+          - paragraph [ref=e207]:
+            - link "mybatis.org" [ref=e208] [cursor=pointer]:
+              - /url: https://www.mybatis.org
+        - img [ref=e210]
+  - link "" [ref=e214] [cursor=pointer]:
+    - /url: "#top-of-page"
+    - generic [ref=e215]: 
+  - contentinfo [ref=e216]:
+    - generic [ref=e219]:
+      - heading [level=5] [ref=e221]:
+        - link "Aspectran" [ref=e222] [cursor=pointer]:
+          - /url: https://aspectran.com/aspectran/
+      - generic [ref=e223]:
+        - link "About Aspectran" [ref=e224] [cursor=pointer]:
+          - /url: https://aspectran.com/aspectran/
+          - heading "About Aspectran" [level=5] [ref=e225]
+        - paragraph [ref=e226]:
+          - link "Aspectran is a lightweight, high‑performance framework for building both simple shell applications and large enterprise web services on the JVM." [ref=e227] [cursor=pointer]:
+            - /url: https://aspectran.com/aspectran/
+      - generic [ref=e228]:
+        - heading "Get Involved" [level=5] [ref=e229]
+        - list [ref=e230]:
+          - listitem [ref=e231]:
+            - text: 
+            - link "GitHub" [ref=e232] [cursor=pointer]:
+              - /url: https://github.com/aspectran
+    - navigation [ref=e235]:
+      - paragraph [ref=e237]: Copyright © 2018-present The Aspectran Project
+      - link "Powered by Aspectran 9.2.3-SNAPSHOT" [ref=e239] [cursor=pointer]:
+        - /url: https://aspectran.com
+```

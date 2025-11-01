@@ -1,0 +1,60 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="24.485797">
+<testsuite name="compra-simple.spec.ts" timestamp="2025-11-01T18:07:18.664Z" hostname="chromium" tests="1" failures="1" skipped="0" time="23.549" errors="0">
+<testcase name="Compra Completa - Flujo Grabado › Debe completar el flujo de compra con el código grabado" classname="compra-simple.spec.ts" time="23.549">
+<failure message="compra-simple.spec.ts:5:7 Debe completar el flujo de compra con el código grabado" type="FAILURE">
+<![CDATA[  [chromium] › compra-simple.spec.ts:5:7 › Compra Completa - Flujo Grabado › Debe completar el flujo de compra con el código grabado 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('ul.messages li')
+    Expected substring: "Thank you, your order has been submitted"
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toContainText" with timeout 10000ms
+      - waiting for locator('ul.messages li')
+
+
+      64 |     
+      65 |     const confirmationMessage = page.locator('ul.messages li');
+    > 66 |     await expect(confirmationMessage).toContainText('Thank you, your order has been submitted');
+         |                                       ^
+      67 |   });
+      68 |
+      69 | });
+        at /Users/cindy.garcia/Desktop/Samy/pruebas/playwright/tests/compra-simple.spec.ts:66:39
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/compra-simple-Compra-Compl-492e2-ompra-con-el-código-grabado-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/compra-simple-Compra-Compl-492e2-ompra-con-el-código-grabado-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/compra-simple-Compra-Compl-492e2-ompra-con-el-código-grabado-chromium/error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../test-results/compra-simple-Compra-Compl-492e2-ompra-con-el-código-grabado-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace ../test-results/compra-simple-Compra-Compl-492e2-ompra-con-el-código-grabado-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|compra-simple-Compra-Compl-492e2-ompra-con-el-código-grabado-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|compra-simple-Compra-Compl-492e2-ompra-con-el-código-grabado-chromium/video.webm]]
+
+[[ATTACHMENT|compra-simple-Compra-Compl-492e2-ompra-con-el-código-grabado-chromium/error-context.md]]
+
+[[ATTACHMENT|compra-simple-Compra-Compl-492e2-ompra-con-el-código-grabado-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
